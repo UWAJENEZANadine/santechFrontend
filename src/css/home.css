@@ -3,32 +3,374 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.carousel-content{
-  background: #03037f;
+.homepage-container{
+  background-color: #f3f4f6;
+  font-size: 1.5rem;
+
+}
+.carousel-content {
   padding: 1rem;
   width: 50%;
   margin-left: 25rem;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.about-icon-header{
+.about-icon-header {
   margin-left: 1rem;
 }
-.second-part{
+
+.first-part-content{
+  position: relative;
+  margin-top: -1.5rem;
+  z-index: 1;
+  background-color:  #03037f;
+  border-radius: 1.5rem;
+  color: white;
   padding: 3rem;
+  border: 2px solid #fff;
+  margin-bottom: 10rem;
+
+}
+.second-part {
+  padding: 2rem;
   background-color: #f3f4f6;
 }
-.about-icon{
+.about-icon {
   font-size: 5rem;
   border: 1px solid #2196f3;
   border-radius: 50%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-.about-content{
+.about-content {
   font-size: 1.5rem;
   margin-left: 6rem;
+}
+.latest-news-container {
+  font-size: 1.5rem;
+}
+.latest-news-container-header {
+  font-size: 4rem;
+  color: #03037f;
+  border-left: 10px solid #03037f;
+  padding: 2.5rem;
+  margin-left: 50rem;
+  margin-top: 3rem;
+  font-family: 'Archivo';
+}
+.latest-news-container-header-card {
+  font-family: 'Archivo';
+  color: #03037f;
+}
+.our-partners-container{
+  padding: 2rem 0 5rem 3rem;
+}
+.our-partners {
+  font-family: 'Archivo';
+  color: #03037f;
+  font-size: 4rem;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider{
+  height: 10rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+
+}
+.slider .slide{
+  height: 150px;
+  width: 350px;
+}
+
+
+.second-part-service {
+box-shadow:0 2rem 6rem rgba(0, 0, 0, .3);
+
+}
+@media only screen and (max-width: 75em){   /*12000px */
+  .container{
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+}
+
+
+.Testmonial-container {
+  background-color: #faf9f9;
+  border-bottom: 1px solid #f4f2f2;
+  margin-top: 5rem;
+  padding: 1rem;
+
+}
+.Testmonial-container h1{
+  color: #03037f;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.Testmonial{
+  display: flex;
+  padding: 4.5rem;
+  background-color: #faf9f9;
+  border-bottom: 1px solid #f4f2f2;
+}
+
+@media only screen and (max-width: 56.25em){ 
+  .Testmonial{
+     padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em){   /*600px */
+  .Testmonial{
+    flex-direction: column;
+    
+  }
+  
+}
+
+.description{
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+}
+@media only screen and (max-width: 56.25em){ 
+  .description{
+     padding: 2rem;
+     margin-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em){   /*600px */
+  .description{
+    margin-right: 0;
+    margin-bottom: 3rem;
+    
+  }
+  
+}
+
+
+
+.paragraph:not(:last-of-type){
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+
+}
+.paragraph{
+  font-size: 1.25rem;
+}
+
+.list{
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: 2px solid #f4f2f2;
+  border-bottom: 2px solid #f4f2f2;
+  font-size: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.list-item{
+  flex: 0 0 50%;
+  margin-bottom: .7rem;
+
+}
+.list-item::before{
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: .7rem;
+
+  background-color: #03037f;
+
+  -webkit-mask-size: cover; 
+
+  mask-size: cover; /*to make it work for future browser */
+
+}
+.recommend{
+  font-size: 1.3rem;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+}
+.recommend__count{
+  margin-right: auto;
+
+}
+.recommend__friends{
+  display: flex;
+}
+.recommend__photo{
+  box-sizing: content-box; /* to add  a border to the width without changing its given width */
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+
+
+}
+.recommend__photo:not(:last-child){
+  margin-right: -2rem;
+
+}
+.user-reviews{
+  /* background-color: orangered; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: block; */
+}
+.review__photo{
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.review{
+  background-color: #fff;
+  font-size: 1.25rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .2);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+
+}
+@media only screen and (max-width: 56.25em){ 
+  .review{
+     padding: 2rem;
+     margin-bottom: 3rem;
+  }
+}
+.review__user{
+  display: flex;
+  align-items: center;
+}
+.review__text{
+  margin-bottom: 2rem;
+  z-index: 10; /*z index work when you set position */
+  position: relative;
+
+}
+.review__user-box{
+  margin-right: auto;
+
+}
+.review__user-name{
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: .4rem;
+
+}
+.review__user-date{
+  font-size: 1rem;
+  color: #9999;
+
+}
+.review__rating{
+  color: #03037f;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.review::before{
+  content: "\201C"; /* to add quotation */
+  position: absolute;
+  top: -2.75rem;
+  left: -1rem;
+  line-height: 1;
+  font-size: 20rem;
+  color: #f4f2f2;
+  font-family: sans-serif;
+  z-index: 1;
+}
+.cta{
+  padding: 3.5rem 0;
+  text-align: center;
+
+}
+@media only screen and (max-width: 56.25em){ 
+  .review{
+     padding: 2.5rem 0;
+
+  }
+}
+.cta__book-now{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+
+}
+.btn{
+  font-size: 1.5rem;
+  font-weight: 300;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 100px;
+  /* background-image: linear-gradient(to right, #0606f0, #03037f); */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn:hover{
+  background-image: linear-gradient(to left, #0606f0, #0707af);
+}
+.btn-inline{
+  border: none;
+  color: #03037f;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #03037f;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s;
+}
+.btn-inline span{
+  margin-left: 3px;
+  transition: all .2s;
+}
+.btn-inline:hover span{
+  margin-left: 8px;
+}
+
+.btn-inline:hover{
+  color: #333;
+  border-bottom: 1px solid #333;
+
+  
+}
+
+.btn-inline:focus{
+  outline: none;
+  animation: pulsate 1s infinite;
+
 }
 
 
