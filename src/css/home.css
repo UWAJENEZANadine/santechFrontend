@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300&family=Josefin+Sans:wght@100;200;300;400&family=Poppins:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300&family=Josefin+Sans:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/clash-display');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', serif;
 }
 .homepage-container{
   background-color: #f3f4f6;
@@ -15,7 +16,7 @@
   width: 50%;
   margin-left: 25rem;
   font-weight: 900;
-  font-family: "Poppins", sans-serif;
+  font-family: 'clash-display', serif;
 }
 .about-icon-header {
   margin-left: 1rem;
@@ -32,6 +33,11 @@
   border: 2px solid #fff;
   margin-bottom: 10rem;
 
+}
+.num{
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'clash-display', serif;
 }
 .second-part {
   padding: 2rem;
@@ -57,17 +63,17 @@
   padding: 2.5rem;
   margin-left: 50rem;
   margin-top: 3rem;
-  font-family: 'Archivo';
+  font-family: 'Montserrat', sans-serif;
 }
 .latest-news-container-header-card {
-  font-family: 'Archivo';
+  font-family: 'Montserrat', sans-serif;
   color: #03037f;
 }
 .our-partners-container{
   padding: 2rem 0 5rem 3rem;
 }
 .our-partners {
-  font-family: 'Archivo';
+  font-family: 'Montserrat', sans-serif;
   color: #03037f;
   font-size: 4rem;
 }
@@ -96,11 +102,19 @@
   height: 150px;
   width: 350px;
 }
+.service-icon{
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
 
 
 .second-part-service {
 box-shadow:0 2rem 6rem rgba(0, 0, 0, .3);
 
+}
+.second-part-service .row .col{
+  border-right: 1px solid #ccc;
+  
 }
 @media only screen and (max-width: 75em){   /*12000px */
   .container{
@@ -124,6 +138,7 @@ box-shadow:0 2rem 6rem rgba(0, 0, 0, .3);
   text-transform: uppercase;
   font-size: 3.5rem;
   font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .Testmonial{
