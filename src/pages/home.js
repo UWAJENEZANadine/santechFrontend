@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/home.css";
 import Carousel from "react-bootstrap/Carousel";
-import { FcAbout, FcElectricity, FcRadarPlot } from "react-icons/fc";
+import { FcAbout, FcElectricity, FcRadarPlot} from "react-icons/fc";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { FiCommand } from "react-icons/fi"
+import { TbDeviceComputerCamera } from "react-icons/tb"
+import { GoFileSymlinkFile } from "react-icons/go"
+import pic1 from "../assets/IMG-20230508-WA0012.jpg"
+
 
 const Home = () => {
+  useEffect(() => {
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 4000; 
+    
+    valueDisplays.forEach((valueDisplay)=>{
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if(startValue == endValue){
+          clearInterval(counter);
+        }
+      }, duration);
+    }) 
+    },[])
+
   return (
     <>
       <section className="homepage-container">
@@ -13,7 +37,7 @@ const Home = () => {
           <Carousel.Item style={{ height: "80vh" }}>
             <img
               className="d-block w-100"
-              src="https://pbs.twimg.com/media/FvTKHGrWAAwDv73?format=jpg&name=large"
+              src= {pic1}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -95,22 +119,27 @@ const Home = () => {
         <div className="first-part">
           <div className="first-part-content container d-flex justify-content-between align-items-center">
             <div className="p-5">
-              <h1>50+</h1>
+              <TbDeviceComputerCamera className="service-icon" />
+              <h1 className="num" data-val="50" >000</h1>
               <p>SanTech Hub</p>
             </div>
             <div>
-              <h1>65 +</h1>
+            <FiCommand className="service-icon"/>
+
+              <h1 className="num" data-val="64">000</h1>
               <p>E-vistors</p>
             </div>
             <div className="p-5">
-              <h1>1 +</h1>
+              <GoFileSymlinkFile className="service-icon"/>
+              <h1 className="num" data-val="1">0</h1>
               <p>Annika Technology</p>
             </div>
           </div>
         </div>
+       
 
-        <section className="second-part">
-          <div className="second-part-service container ">
+        <section className="second-part container-fluid">
+          <div className="second-part-service">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
               <div className="col bg-white p-5">
                 <h1 className="display-6">
