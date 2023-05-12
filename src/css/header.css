@@ -37,3 +37,47 @@
   font-family: 'Montserrat', serif;
   line-height: 1.5;
 }
+
+.translate-button-container {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.translate-button-container #google_translate_element {
+  display: inline-block;
+}
+
+.translate-button-container .goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+.translate-button-container .goog-te-gadget-icon {
+  background-image: url("https://blog.hubspot.com/hubfs/image8-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.translate-button-container .goog-te-gadget {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 5px 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.translate-button-container .goog-te-gadget:hover {
+  background-color: #f8f8f8;
+}

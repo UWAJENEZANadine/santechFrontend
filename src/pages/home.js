@@ -7,6 +7,7 @@ import Card from "react-bootstrap/Card";
 import { FiCommand } from "react-icons/fi"
 import { TbDeviceComputerCamera } from "react-icons/tb"
 import { GoFileSymlinkFile } from "react-icons/go"
+import pic1 from "../assets/IMG-20230508-WA0012.jpg"
 
 
 const Home = () => {
@@ -36,7 +37,7 @@ const Home = () => {
           <Carousel.Item style={{ height: "80vh" }}>
             <img
               className="d-block w-100"
-              src="https://pbs.twimg.com/media/FvTKHGrWAAwDv73?format=jpg&name=large"
+              src= {pic1}
               alt="First slide"
             />
             <Carousel.Caption>

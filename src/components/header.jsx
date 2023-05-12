@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/header.css";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+
+
 const Header = () => {
+  
   return (
     <>
+      
+
       <div className="header-box container-fluid d-flex justify-content-between align-items-center">
         <div className=""></div>
         <div className="">
@@ -24,7 +29,7 @@ const Header = () => {
       </div>
       <div className="header-links-logo-container container-fluid d-flex justify-content-between align-items-center">
         <div className="logo-container">
-          <img src={logo} style={{height: "10vh" }} />
+          <img src={logo} style={{ height: "10vh" }} />
         </div>
         <div className="header-links-container ">
           <NavLink className="header-links text-decoration-none" to="home">
