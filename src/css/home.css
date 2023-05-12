@@ -13,10 +13,14 @@
 }
 .carousel-content {
   padding: 1rem;
-  width: 50%;
+  width: 40%;
   margin-left: 25rem;
   font-weight: 900;
   font-family: 'clash-display', serif;
+  background-color: #00000085;
+  opacity: .8;
+  font-weight: 900;
+ 
 }
 .about-icon-header {
   margin-left: 1rem;
@@ -29,9 +33,9 @@
   background-color:  #03037f;
   border-radius: 1.5rem;
   color: white;
-  padding: 3rem;
+  padding: 2rem;
   border: 2px solid #fff;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 
 }
 .num{
@@ -145,7 +149,7 @@ box-shadow:0 2rem 6rem rgba(0, 0, 0, .3);
   display: flex;
   padding: 4.5rem;
   background-color: #faf9f9;
-  border-bottom: 1px solid #f4f2f2;
+  border-bottom: 1px solid #2195f317;
 }
 
 @media only screen and (max-width: 56.25em){ 
@@ -166,7 +170,7 @@ box-shadow:0 2rem 6rem rgba(0, 0, 0, .3);
   background-color: #fff;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
   padding: 3rem;
-  flex: 0 0 60%;
+  flex: 0 0 40%;
   margin-right: 4.5rem;
 }
 @media only screen and (max-width: 56.25em){ 
@@ -195,37 +199,22 @@ box-shadow:0 2rem 6rem rgba(0, 0, 0, .3);
 .paragraph{
   font-size: 1.25rem;
 }
+.Testmonial-heading{
+  color: #03037f;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+.testmonial-star{
+  color: #03037f;
+  margin-bottom: 3rem;
 
-.list{
-  list-style: none;
-  margin: 3rem 0;
-  padding: 3rem 0;
-  border-top: 2px solid #f4f2f2;
-  border-bottom: 2px solid #f4f2f2;
-  font-size: 1.25rem;
-  display: flex;
-  flex-wrap: wrap;
 
 }
-.list-item{
-  flex: 0 0 50%;
-  margin-bottom: .7rem;
-
+.testmonial-star-2{
+  margin-left: 1rem;
 }
-.list-item::before{
-  content: "";
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
-  margin-right: .7rem;
 
-  background-color: #03037f;
-
-  -webkit-mask-size: cover; 
-
-  mask-size: cover; /*to make it work for future browser */
-
-}
 .recommend{
   font-size: 1.3rem;
   color: #ccc;

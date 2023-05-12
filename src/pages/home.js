@@ -1,45 +1,41 @@
 import React, { useEffect } from "react";
 import "../css/home.css";
 import Carousel from "react-bootstrap/Carousel";
-import { FcAbout, FcElectricity, FcRadarPlot} from "react-icons/fc";
+import { FcAbout, FcElectricity, FcRadarPlot } from "react-icons/fc";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { FiCommand } from "react-icons/fi"
-import { TbDeviceComputerCamera } from "react-icons/tb"
-import { GoFileSymlinkFile } from "react-icons/go"
-import pic1 from "../assets/IMG-20230508-WA0012.jpg"
-
+import { FiCommand } from "react-icons/fi";
+import { TbDeviceComputerCamera } from "react-icons/tb";
+import { GoFileSymlinkFile } from "react-icons/go";
+import pic1 from "../assets/IMG-20230508-WA0012.jpg";
+import { AiFillStar } from "react-icons/ai";
 
 const Home = () => {
   useEffect(() => {
     let valueDisplays = document.querySelectorAll(".num");
-    let interval = 4000; 
-    
-    valueDisplays.forEach((valueDisplay)=>{
+    let interval = 6000;
+
+    valueDisplays.forEach((valueDisplay) => {
       let startValue = 0;
       let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-      
+
       let duration = Math.floor(interval / endValue);
       let counter = setInterval(function () {
         startValue += 1;
         valueDisplay.textContent = startValue;
-        if(startValue == endValue){
+        if (startValue == endValue) {
           clearInterval(counter);
         }
       }, duration);
-    }) 
-    },[])
+    });
+  }, []);
 
   return (
     <>
       <section className="homepage-container">
         <Carousel fade className="home-container" data-interval="1000">
           <Carousel.Item style={{ height: "80vh" }}>
-            <img
-              className="d-block w-100"
-              src= {pic1}
-              alt="First slide"
-            />
+            <img className="d-block w-100" src={pic1} alt="First slide" />
             <Carousel.Caption>
               <h3 className="carousel-content text-white display-6">
                 First slide label
@@ -120,24 +116,28 @@ const Home = () => {
           <div className="first-part-content container d-flex justify-content-between align-items-center">
             <div className="p-5">
               <TbDeviceComputerCamera className="service-icon" />
-              <h1 className="num" data-val="50" >000</h1>
+              <h1 className="num" data-val="150">
+                000
+              </h1>
               <p>SanTech Hub</p>
             </div>
             <div>
-            <FiCommand className="service-icon"/>
+              <FiCommand className="service-icon" />
 
-              <h1 className="num" data-val="64">000</h1>
+              <h1 className="num" data-val="164">
+                000
+              </h1>
               <p>E-vistors</p>
             </div>
             <div className="p-5">
-              <GoFileSymlinkFile className="service-icon"/>
-              <h1 className="num" data-val="1">0</h1>
+              <GoFileSymlinkFile className="service-icon" />
+              <h1 className="num" data-val="1">
+                0
+              </h1>
               <p>Annika Technology</p>
             </div>
           </div>
         </div>
-       
-
         <section className="second-part container-fluid">
           <div className="second-part-service">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
@@ -373,26 +373,36 @@ const Home = () => {
           <h1 className="text-center">Testmonial</h1>
           <div className="Testmonial">
             <div className="description">
-              <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-                quo magnam nobis, eum sint cum tempore ducimus in ipsam nostrum
-                modi fugit officiis a, consequuntur quod sapiente unde?
-                Pariatur, quas.
+              <h2 className="Testmonial-heading">It was a great Experience</h2>
+              <p>
+                <span>
+                  <AiFillStar className="testmonial-star" />
+                </span>
+                <span>
+                  <AiFillStar className="testmonial-star testmonial-star-2" />
+                </span>
+                <span>
+                  <AiFillStar className="testmonial-star testmonial-star-2" />
+                </span>
+                <span>
+                  <AiFillStar className="testmonial-star testmonial-star-2" />
+                </span>
+                <span>
+                  <AiFillStar className="testmonial-star testmonial-star-2" />
+                </span>
               </p>
               <p className="paragraph">
-                eum sint cum tempore ducimus in ipsam nostrum modi fugit
-                officiis a, consequuntur quod sapiente unde? Pariatur, quas.
+                We had a brilliant experience working with SanTech. They
+                delivered great solutions using cutting edge techniques. The
+                quality of their work was excellent and We had a brilliant
+                experience working with SanTech. They delivered great
+                solutions using cutting edge techniques.
               </p>
-              <ul className="list">
-                <li className="list-item">Lorem ipsum dolor sit</li>
-                <li className="list-item">Lorem ipsum dolor sit</li>
-                <li className="list-item">Lorem ipsum dolor sit</li>
-                <li className="list-item">Lorem ipsum dolor sit</li>
-                <li className="list-item">Lorem ipsum dolor sit</li>
-                <li className="list-item">Lorem ipsum dolor sit</li>
-                <li className="list-item">Lorem ipsum dolor sit</li>
-                <li className="list-item">Lorem ipsum dolor sit</li>
-              </ul>
+              <p className="paragraph">
+                We had a brilliant experience working with SanTech. They
+                delivered great solutions using cutting edge techniques. The
+                quality of their work was excellent and
+              </p>
               <div className="recommend">
                 <p className="recommend__count">
                   Lucy and 3 other friend gives testmonial.
@@ -420,8 +430,8 @@ const Home = () => {
             <div className="user-reviews">
               <figure className="review">
                 <blockquote className="review__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Officia nemo, cum veniam esse sapiente aspernatur.
+                  I just wanted to share a quick note and let you know that you
+                  guys do a really good job.
                 </blockquote>
                 <figcaption className="review__user">
                   <img
@@ -438,8 +448,8 @@ const Home = () => {
 
               <figure className="review">
                 <blockquote className="review__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Officia nemo, cum veniam esse sapiente aspernatur.
+                  I'm glad I decided to work with you. It's really great how
+                  easy your websites are update
                 </blockquote>
                 <figcaption className="review__user">
                   <img
