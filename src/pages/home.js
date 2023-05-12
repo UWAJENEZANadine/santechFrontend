@@ -139,9 +139,9 @@ const Home = () => {
           </div>
         </div>
         <section className="second-part container-fluid">
-          <div className="second-part-service">
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-              <div className="col bg-white p-5">
+          <div className="second-part-service container">
+            <div className="row">
+              <div className="col p-5">
                 <h1 className="display-6">
                   <FcAbout className="about-icon" />
                   <span className="about-icon-header">SAN TECH HUB</span>
@@ -154,7 +154,7 @@ const Home = () => {
                   <li>Post registration filling</li>
                 </ul>
               </div>
-              <div className="col bg-white p-5">
+              <div className="col p-5">
                 <h1 className="display-6">
                   <FcElectricity className="about-icon" />
                   <span className="about-icon-header">E-vistors system</span>
@@ -167,7 +167,7 @@ const Home = () => {
                   <li>Post registration filling</li>
                 </ul>
               </div>
-              <div className="col bg-white p-5">
+              <div className="col p-5">
                 <h1 className="display-6">
                   <FcRadarPlot className="about-icon" />
                   <span className="about-icon-header">Annika Technology</span>
@@ -201,6 +201,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/Fm1dzrQWAAIxoZB?format=jpg&name=medium"
+                    style={{height:"38vh"}}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card fs-2 text-center text-uppercase fw-bold mb-5">
@@ -231,6 +232,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://igihe.com/local/cache-vignettes/L1000xH666/niyonzima_claudine_avuga_ko_san_tech_yiyeyemeje_guteza_imbere_ikoranabuhanga_rigamije_koroshya_zimwe_muri_serivisi_abantu_bakenera-8007e.jpg?1649864117"
+                    style={{height:"38vh"}}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -260,6 +262,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/FvUFWOcWcAA_Rj0?format=jpg&name=4096x4096"
+                    style={{height:"38vh"}}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -289,6 +292,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/FvRyNBWXwAACgSM?format=jpg&name=large"
+                    style={{height:"38vh"}}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -318,6 +322,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/Ft_kVHzXsAM68MI?format=jpg&name=900x900"
+                    style={{height:"38vh"}}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -347,6 +352,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/Fuz9E06WAAQEw4l?format=jpg&name=4096x4096"
+                    style={{height:"38vh"}}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -370,7 +376,7 @@ const Home = () => {
           </div>
         </div>
         <div className="Testmonial-container container-fluid">
-          <h1 className="text-center">Testmonial</h1>
+          <h1 className="text-center mt-4">Testmonials</h1>
           <div className="Testmonial">
             <div className="description">
               <h2 className="Testmonial-heading">It was a great Experience</h2>
