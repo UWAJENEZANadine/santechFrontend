@@ -128,7 +128,6 @@
 
 .Testmonial-container {
   background-color: #faf9f9;
-  border-bottom: 1px solid #f4f2f2;
   margin-top: 5rem;
   padding: 1rem;
 }
@@ -144,7 +143,6 @@
   display: flex;
   padding: 4.5rem;
   background-color: #faf9f9;
-  border-bottom: 1px solid #2195f317;
 }
 
 @media only screen and (max-width: 56.25em) {

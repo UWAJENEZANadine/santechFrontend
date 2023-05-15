@@ -36,6 +36,7 @@
   color: #03037f;
   font-family: 'Montserrat', serif;
   line-height: 1.5;
+  font-weight: 600;
 }
 
 .translate-button-container {
@@ -80,4 +81,12 @@
 
 .translate-button-container .goog-te-gadget:hover {
   background-color: #f8f8f8;
+}
+.header-links:hover{
+  color: #fff;
+  background-color: #03037f;
+  border-radius: 3rem 0rem 3rem 0rem ;
+  transition: 1s all;
+  
+
 }

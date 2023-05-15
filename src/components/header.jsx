@@ -35,22 +35,22 @@ const Header = () => {
           <NavLink className="header-links text-decoration-none" to="home">
             Home
           </NavLink>
-          <NavLink className="header-links text-decoration-none" to="">
+          <NavLink className="header-links text-decoration-none" to="about">
             About
           </NavLink>
-          <NavLink className="header-links text-decoration-none" to="">
+          <NavLink className="header-links text-decoration-none" to="iniative">
             Initiatives
           </NavLink>
-          <NavLink className="header-links text-decoration-none" to="">
+          <NavLink className="header-links text-decoration-none" to="story">
             Success Stories
           </NavLink>
-          <NavLink className="header-links text-decoration-none" to="">
+          <NavLink className="header-links text-decoration-none" to="opportunities">
             Opportunities
           </NavLink>
-          <NavLink className="header-links text-decoration-none" to="">
+          <NavLink className="header-links text-decoration-none" to="updates">
             updates
           </NavLink>
-          <NavLink className="header-links text-decoration-none" to="">
+          <NavLink className="header-links text-decoration-none" to="contact">
             contacts
           </NavLink>
         </div>

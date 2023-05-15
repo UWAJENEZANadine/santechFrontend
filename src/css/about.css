@@ -1,0 +1,103 @@
+@import url("https://fonts.cdnfonts.com/css/clash-display");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+.about-container-page {
+  background-color: #f9fafb;
+}
+.about-container {
+  background-image: linear-gradient(90deg, #03037f9a, #03037fad),
+    url("https://pbs.twimg.com/media/FbCQsEqXgAsZW1u?format=jpg&name=900x900");
+  height: 35vh;
+}
+.about-container-content {
+  padding: 4rem 10rem 2rem 10rem;
+}
+.mission-container {
+  padding-top: 3rem; 
+}
+
+.mission-container .row {
+  background-color: #e0e7ff;
+  padding: 3rem; 
+}
+
+.mission-container .row .col {
+  border-left: 10px solid #03037f;
+  border-radius: 2rem;
+  background-color: #f0fdfa;
+  padding: 2rem;
+  height: 50vh; 
+ 
+}
+
+
+.mission-container .row .col p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.9px;
+}
+.mission-container .row .col h1 {
+  /* color: #03037f; */
+
+ margin-bottom: 3rem;
+}
+.mission-container-icon {
+  border: 3px solid #03037f;
+  font-size: 3.5rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.mission-container .row .col:hover {
+  background-color: #03037f;
+  color: white;
+  transition: 2s all;
+} 
+.our-staff-container {
+  text-align: center;
+}
+.staff-container {
+  background-color: #f9fafb;
+}
+.our-staff-container h1 {
+  font-size: 3.5rem;
+  color: #03037f;
+  letter-spacing: 1rem;
+  font-weight: 900;
+}
+.our-staff-container-line {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+ 
+}
+.our-staff-container-line::before {
+  background-image: linear-gradient(90deg,#67e8f9, #03037f);
+  content: "";
+  position: absolute;
+  left: 37%;
+  width: 6%;
+  height: 3px;
+  top: 10px;
+ 
+}
+.our-staff-container-line::after {
+  background-image: linear-gradient(90deg,#03037f, #67e8f9);
+  content: "";
+  position: absolute;
+  left: 57%;
+  width: 6%;
+  height: 3px;
+  top: 10px;
+}
+.staff-container .container{
+  padding: 5rem;
+}
+.staff-container .container .row{
+  align-items: center;
+  color: #03037f;
+}
