@@ -34,7 +34,9 @@ const Home = () => {
     <>
       <section className="homepage-container">
         <Carousel fade className="home-container" data-interval="1000">
-          <Carousel.Item style={{ height: "80vh" }}>
+          <Carousel.Item
+            style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
+          >
             <img className="d-block w-100" src={pic1} alt="First slide" />
             <Carousel.Caption>
               <h3 className="carousel-content text-white display-6">
@@ -42,7 +44,9 @@ const Home = () => {
               </h3>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item style={{ height: "80vh" }}>
+          <Carousel.Item
+            style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
+          >
             <img
               className="d-block w-100"
               src="https://pbs.twimg.com/media/FbCQsE7XwAATF4L?format=jpg&name=medium"
@@ -55,7 +59,9 @@ const Home = () => {
               </h3>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item style={{ height: "80vh" }}>
+          <Carousel.Item
+            style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
+          >
             <img
               className="d-block w-100"
               src="https://pbs.twimg.com/media/FuFZBfWXwAA5m2X?format=jpg&name=medium"
@@ -66,10 +72,11 @@ const Home = () => {
               <h3 className="carousel-content text-white display-6">
                 Third slide label
               </h3>
-              <p></p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item style={{ height: "80vh" }}>
+          <Carousel.Item
+            style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
+          >
             <img
               className="d-block w-100"
               src="https://pbs.twimg.com/media/FuFZBfUXsAAVBQ6?format=jpg&name=medium"
@@ -80,24 +87,25 @@ const Home = () => {
               <h3 className="carousel-content text-white display-6">
                 Four slide label
               </h3>
-              <p></p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item style={{ height: "80vh" }}>
+          <Carousel.Item
+            style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
+          >
             <img
               className="d-block w-100"
               src="https://pbs.twimg.com/media/Ft_eOG_XsAAh2Tb?format=jpg&name=medium"
               alt="five slide"
             />
-
             <Carousel.Caption>
               <h3 className="carousel-content text-white display-6">
                 Five slide label
               </h3>
-              <p></p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item style={{ height: "80vh" }}>
+          <Carousel.Item
+            style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
+          >
             <img
               className="d-block w-100"
               src="https://pbs.twimg.com/media/FaX8yoFXoAAdwsb?format=jpg&name=medium"
@@ -108,7 +116,6 @@ const Home = () => {
               <h3 className="carousel-content text-white display-6">
                 Six slide label
               </h3>
-              <p></p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -201,7 +208,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/Fm1dzrQWAAIxoZB?format=jpg&name=medium"
-                    style={{height:"38vh"}}
+                    style={{ height: "38vh" }}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card fs-2 text-center text-uppercase fw-bold mb-5">
@@ -232,7 +239,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://igihe.com/local/cache-vignettes/L1000xH666/niyonzima_claudine_avuga_ko_san_tech_yiyeyemeje_guteza_imbere_ikoranabuhanga_rigamije_koroshya_zimwe_muri_serivisi_abantu_bakenera-8007e.jpg?1649864117"
-                    style={{height:"38vh"}}
+                    style={{ height: "38vh" }}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -262,7 +269,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/FvUFWOcWcAA_Rj0?format=jpg&name=4096x4096"
-                    style={{height:"38vh"}}
+                    style={{ height: "38vh" }}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -292,7 +299,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/FvRyNBWXwAACgSM?format=jpg&name=large"
-                    style={{height:"38vh"}}
+                    style={{ height: "38vh" }}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -322,7 +329,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/Ft_kVHzXsAM68MI?format=jpg&name=900x900"
-                    style={{height:"38vh"}}
+                    style={{ height: "38vh" }}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -352,7 +359,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/Fuz9E06WAAQEw4l?format=jpg&name=4096x4096"
-                    style={{height:"38vh"}}
+                    style={{ height: "38vh" }}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
@@ -401,8 +408,8 @@ const Home = () => {
                 We had a brilliant experience working with SanTech. They
                 delivered great solutions using cutting edge techniques. The
                 quality of their work was excellent and We had a brilliant
-                experience working with SanTech. They delivered great
-                solutions using cutting edge techniques.
+                experience working with SanTech. They delivered great solutions
+                using cutting edge techniques.
               </p>
               <p className="paragraph">
                 We had a brilliant experience working with SanTech. They
