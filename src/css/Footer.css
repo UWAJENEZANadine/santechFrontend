@@ -27,3 +27,24 @@
 .footer-image{
   background-color: #01016f;
 }
+
+.list{
+  list-style: none;
+  flex-wrap: wrap;
+
+}
+.list-item{
+  margin-left: -1rem;
+  margin-bottom: .9rem;
+
+}
+.list-item::before{
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: .7rem;
+  background-color: #fff;
+
+
+}

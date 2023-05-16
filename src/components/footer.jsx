@@ -20,10 +20,13 @@ const Footer = () => {
             </div>
             <div className="col mb-5">
               <h1 className="mb-5">OUR STRETCH</h1>
-              <p>
-                Virtually Reality(VR) Technology Research and product
-                Development Tech Tech (Innovation/career) Development Hub
-              </p>
+              <ul className="list">
+                <li className="list-item">Virtually Reality(VR) Technology</li>
+                <li className="list-item">Reasearch and Product development</li>
+                <li className="list-item">Innovation and career tech hub development </li>
+                 
+               
+              </ul>
             </div>
             <div className="col mb-5">
               <h1 className="mb-5">QUICK LINKS</h1>
@@ -36,7 +39,7 @@ const Footer = () => {
                   </h5>
                   <h5 className="mb-4">
                     <NavLink className="text-white text-decoration-none" to="">
-                      About
+                      About us
                     </NavLink>
                   </h5>
                   <h5 className="mb-4">
@@ -48,17 +51,12 @@ const Footer = () => {
                 <div>
                   <h5 className="mb-4">
                     <NavLink className="text-white text-decoration-none" to="">
-                      Opportunities
+                      Resources
                     </NavLink>
                   </h5>
                   <h5 className="mb-4">
                     <NavLink className="text-white text-decoration-none" to="">
-                      updates
-                    </NavLink>
-                  </h5>
-                  <h5 className="mb-4">
-                    <NavLink className="text-white text-decoration-none" to="">
-                      contacts
+                      contact us
                     </NavLink>
                   </h5>
                 </div>
@@ -102,7 +100,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container-fluid footer-image">
-        <img src={pic} style={{width:"100%"}}/>
+        <img src={pic} style={{ width: "100%" }} />
       </div>
     </>
   );
