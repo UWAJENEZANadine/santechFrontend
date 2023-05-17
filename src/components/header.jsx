@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className="header-container">
         <div className="container-fluid">
-          <div className="row header-container-top">
+          <div className="row row-cols-1 row-cols-sm-2 header-container-top">
             <div className="col">
               <h4>
                 <img src={business} /> Smart Applications and Networking
@@ -36,7 +36,7 @@ const Header = () => {
               </h5>
               <h5>
                 <NavLink className="header-top-link" to="">
-                  Credit Application
+                  Application
                 </NavLink>
               </h5>
             </div>
@@ -46,7 +46,7 @@ const Header = () => {
           <div className="row">
             <div className="col">
               <h1>
-                <span className="text-white" style={{ fontWeight: "700" }}>
+                <span className="text-white" style={{ fontWeight: "700", padding:"1rem" }}>
                   SAN
                 </span>
                 <span style={{ color: "#88898d", fontWeight: "700" }}>
@@ -55,7 +55,7 @@ const Header = () => {
               </h1>
               <div className="header-container-middle-line-text"></div>
             </div>
-            <div className="col">
+            <div className="col d-sm-none d-md-none d-lg-block">
               <input
                 type="text"
                 className="search__input"
@@ -77,7 +77,7 @@ const Header = () => {
           <div className="row">
             <div className="col">
               <h3>
-                <select
+                <select className="d-none d-sm-none d-md-none d-lg-block"
                   style={{
                     width: "",
                     fontSize: "1.5rem",
@@ -120,6 +120,8 @@ const Header = () => {
                 </NavLink>
               </h5>
             </div>
+
+
             <div className="col-2">
               <h5><NavLink target="_blank" to="https://zeno.fm/radio/san-tech/" className="header-bottom-link"> <MdOutlineRadio style={{fontSize:"1.4rem", marginTop:"-2px"}}/> Radio </NavLink></h5>
 
@@ -132,3 +134,4 @@ const Header = () => {
 };
 
 export default Header;
+
