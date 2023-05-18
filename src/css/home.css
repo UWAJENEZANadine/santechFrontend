@@ -11,7 +11,7 @@
   background-color: #f3f4f6;
   font-size: 1.5rem;
 }
-.home-container .d-block{
+.home-container .d-block {
   opacity: 0.4;
 }
 .carousel-content {
@@ -25,7 +25,24 @@
   font-weight: 900;
 }
 
-  
+@media only screen and (max-width: 600px) and (min-width: 400px){
+  .carousel-content{
+    margin-left: 10rem;
+  }
+
+
+}
+@media only screen and (max-width: 700px) and (min-width: 600px){
+  .carousel-content{
+    margin-left: 14rem;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 700px){
+  .carousel-content{
+    margin-left: 17rem;
+  }
+}
+
 /* .heading-primary--sub{
   display: block;
   font-size: 2rem;
@@ -39,31 +56,41 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-10rem);
+  }
   80% {
-    transform: translateX(1rem); }
+    transform: translateX(1rem);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(10rem);
+  }
   80% {
-    transform: translateX(-1rem); }
+    transform: translateX(-1rem);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem); }
+    transform: translateY(3rem);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
-
+    transform: translate(0);
+  }
+}
 
 .about-icon-header {
   margin-left: 1rem;
@@ -74,7 +101,7 @@
   margin-top: -1.5rem;
   z-index: 1;
   background-color: #03037f;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   color: white;
   padding: 2rem;
   border: 2px solid #fff;
@@ -101,7 +128,6 @@
   height: 50vh;
   border-radius: 5px;
   border-bottom: 2px solid #2196f3;
-
 }
 .about-icon {
   font-size: 5rem;
@@ -125,17 +151,35 @@
   margin-top: 3rem;
   font-family: "Montserrat", sans-serif;
 }
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+  .latest-news-container-header {
+    
+    margin-left: 10rem;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 600px)
+{
+  .latest-news-container-header {
+    
+    margin-left: 5rem;
+  }
+}
 .latest-news-container-header-card {
   font-family: "Montserrat", sans-serif;
   color: #03037f;
 }
 .our-partners-container {
-  padding: 2rem 0 5rem 3rem;
+  padding: 5rem 0rem 5rem 3rem;
+  height: 80vh;
+
+  background-color: #e5e7eb;
 }
 .our-partners {
-  font-family: "Montserrat", sans-serif;
   color: #03037f;
-  font-size: 4rem;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 @keyframes scroll {
   0% {
@@ -145,22 +189,7 @@
     transform: translateX(calc(-250px * 7));
   }
 }
-.slider {
-  height: 10rem;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-}
-.slider .slide-track {
-  animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-.slider .slide {
-  height: 150px;
-  width: 350px;
-}
+
 
 @media only screen and (max-width: 75em) {
   /*12000px */
