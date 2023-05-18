@@ -9,6 +9,9 @@ import { TbDeviceComputerCamera } from "react-icons/tb";
 import { GoFileSymlinkFile } from "react-icons/go";
 import pic1 from "../assets/IMG-20230508-WA0012.jpg";
 import { AiFillStar } from "react-icons/ai";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import "swiper/swiper-bundle.min.css";
 
 const Home = () => {
   useEffect(() => {
@@ -495,75 +498,88 @@ const Home = () => {
             />
           </h1>
 
-          <div className="slider">
-            <div className="slide-track">
-              <div className="slide">
-                <img
-                  src="https://pbs.twimg.com/profile_images/1014071220583784448/ZGDmicJm_400x400.jpg"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
-              </div>
-              <div className="slide">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
-              </div>
-              <div className="slide">
-                <img
-                  src="https://www.learningpassport.org/sites/unicef.org.learningpassport/files/styles/crop_thumbnail/public/partner-logo_Generation-Unlimited.png?itok=DTCZ6Hcv"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
-              </div>
-              <div className="slide">
-                <img
-                  src="https://www.unicef.org/sites/default/files/styles/crop_thumbnail/public/UNICEF_logo_2016.png?itok=HpdSOUoY"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
-              </div>
-              <div className="slide">
-                <img
-                  src="https://pbs.twimg.com/profile_images/1512032108876865536/s2MqZaRv_400x400.jpg"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
-              </div>
-              <div className="slide">
-                <img
-                  src="https://www.adaptation-fund.org/wp-content/uploads/2017/07/Youth-as-agents-of-Community-Development-United-Nations-Development-Programme.jpg"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
-              </div>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={2}
+            slidesPerView={4}
+            navigation
+        
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            style={{marginTop:"6rem"}}
+          >
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
 
-              <div className="slide">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
+              <img
+                src="https://pbs.twimg.com/profile_images/1014071220583784448/ZGDmicJm_400x400.jpg"
+                style={{ width: "100%" }}
+              />
               </div>
-              <div className="slide">
-                <img
-                  src="https://www.risa.org.za/static/images/risa-logo.png"
-                  alt="logo"
-                  height="100"
-                  width="100"
-                />
+            </SwiperSlide>
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
+              
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
+                style={{ width: "95%" }}
+              />
               </div>
-            </div>
-          </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
+              <img
+                src="https://www.learningpassport.org/sites/unicef.org.learningpassport/files/styles/crop_thumbnail/public/partner-logo_Generation-Unlimited.png?itok=DTCZ6Hcv"
+                style={{ width: "100%", height:"40vh" }}
+              />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
+              <img
+                src="https://thumbs.dreamstime.com/b/unicef-united-nations-international-children-s-emergency-fund-flag-waving-white-background-close-up-isolated-d-render-realistic-169592090.jpg"
+                style={{ width: "100%",height:"40vh" }}
+              />
+              </div>
+             
+            </SwiperSlide>
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
+              <img
+                src="https://pbs.twimg.com/profile_images/1512032108876865536/s2MqZaRv_400x400.jpg"
+                style={{ width: "100%" }}
+              />
+              </div>
+             
+            </SwiperSlide>
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
+              <img
+                src="https://caribbean.eclac.org/sites/default/files/organizations/images/UN%20logo.png"
+                style={{ width: "100%" }}
+              />
+              </div>
+             
+            </SwiperSlide>
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
+              <img
+                src="https://thumbs.dreamstime.com/b/mastercard-logo-printed-paper-chisinau-moldova-september-mastercard-logo-printed-paper-placed-white-background-128373484.jpg"
+                style={{ width: "100%" }}
+              />
+              </div>
+             
+            </SwiperSlide>
+            <SwiperSlide>
+            <div class="card" style={{width: "25rem"}}>
+              <img
+                src="https://www.risa.gov.rw/index.php?eID=dumpFile&t=f&f=52253&token=97a6bf4950ecf39417b4b7babc6b7a70a6712ffa"
+                style={{ width: "100%", height:"40vh" }}
+              />
+              </div>
+             
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
     </>
