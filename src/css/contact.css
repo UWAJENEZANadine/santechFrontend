@@ -1,0 +1,84 @@
+.contact-container{
+  min-height: 90vh;
+  background-color: #f3f4f6;
+ 
+
+}
+.contact-container-head{
+  background-image: linear-gradient(90deg, #0f0f0f9a, #0d0d0ead),
+  url("https://pbs.twimg.com/media/FbCQsEqXgAsZW1u?format=jpg&name=900x900");
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.contact-container-content .mb-5 h1{
+  font-size: 4rem;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  line-height: 5.5em;
+}
+.contact-card-whole-part{
+  padding: 3rem 0rem 3rem 15rem;
+  align-items: center;
+
+}
+.contact-card-whole-part-inside .container .row .col{
+  align-items: center;
+  padding: 3rem;
+  color: #03037f;
+
+}
+.contact-card-whole-part-inside .container .row .col h1{
+  line-height: 4rem;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+
+}
+.contact-card-whole-part-inside .container .row .col h4{
+  line-height: 5rem;
+  letter-spacing: .1rem;
+}
+.contact-card-whole-part-inside .container .row .col h4 span{
+
+  margin-left: 1rem;
+ 
+}
+.contact-card-whole-part-inside .container .row .col p{
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+  width: 60%;
+  margin-bottom: 6rem;
+
+}
+.contact-footer-icon{
+  padding: 3rem 5rem 0rem 3rem;
+  margin-top: 6rem;
+}
+
+.contact-card-whole-part-inside{
+  min-height: 80vh;
+  width: 90%;
+  background-color: #ddd6fe;
+  border-radius: 5px;
+  box-shadow: 0rem 1px 3px gray;
+}
+.left-side{
+  height: 76vh;
+  background-color: #ffff;
+  border-radius: 7px;
+  padding: 5rem;
+  box-shadow: 1px 1px 1rem grey;
+
+}
+.btn {
+  width: 100%;
+
+}
+label{
+  font-size: 1.2rem;
+}

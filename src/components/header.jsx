@@ -1,12 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, createContext, useContext } from "react";
 import "../css/header.css";
 import { NavLink } from "react-router-dom";
 import { BiSearch } from "react-icons/bi";
 import business from "../assets/business.png";
-import { MdOutlineRadio } from "react-icons/md"
-import logo from "../assets/logo.jpg";
+import { MdOutlineRadio, MdEmail,MdCall } from "react-icons/md";
 
 const Header = () => {
+
+  const [searchTerm, setSearchTerm] = useState('');
+  const [highlightedText, setHighlightedText] = useState('');
+
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearch = () => {
+    const content = document.getElementById('content');
+    const regex = new RegExp(`(${searchTerm})`, 'gi');
+    const highlightedContent = content.innerHTML.replace(
+      regex,
+      '<span style="background-color: yellow">$1</span>'
+    );
+    setHighlightedText(highlightedContent);
+  };
+
   return (
     <>
       <div className="header-container">
@@ -46,7 +63,10 @@ const Header = () => {
           <div className="row">
             <div className="col">
               <h1>
-                <span className="text-white" style={{ fontWeight: "700", padding:"1rem" }}>
+                <span
+                  className="text-white"
+                  style={{ fontWeight: "700", padding: "1rem" }}
+                >
                   SAN
                 </span>
                 <span style={{ color: "#88898d", fontWeight: "700" }}>
@@ -59,17 +79,22 @@ const Header = () => {
               <input
                 type="text"
                 className="search__input"
-                placeholder="search"
+                placeholder="Search word"
               />
+
               <button className="search__button">
                 <BiSearch className="search__icon" />
               </button>
+             
+              
             </div>
             <div className="col header-container-middle-left-side">
-              <h5>info@santechrwanda.com</h5>
+              <h3 className="text-center">CALL US TODAY</h3>
+              <h5><MdEmail /> info@santechrwanda.com</h5>
             </div>
-            <div className="col-2 header-container-middle-left-side">
-              <h5>Others</h5>
+            <div className="col header-container-middle-left-side">
+              <h3 className="text-center">MAIL US TODAY</h3>
+              <h5><MdCall /> info@santechrwanda.com</h5>
             </div>
           </div>
         </div>
@@ -77,7 +102,8 @@ const Header = () => {
           <div className="row">
             <div className="col">
               <h3>
-                <select className="d-none d-sm-none d-md-none d-lg-block"
+                <select
+                  className="d-none d-sm-none d-md-none d-lg-block"
                   style={{
                     width: "",
                     fontSize: "1.5rem",
@@ -100,7 +126,7 @@ const Header = () => {
                 </NavLink>
               </h5>
               <h5>
-                <NavLink className="header-bottom-link" to="">
+                <NavLink className="header-bottom-link" to="about">
                   About
                 </NavLink>
               </h5>
@@ -115,17 +141,28 @@ const Header = () => {
                 </NavLink>
               </h5>
               <h5>
-                <NavLink className="header-bottom-link" to="">
+                <NavLink className="header-bottom-link" to="contact">
                   Contact
                 </NavLink>
               </h5>
             </div>
 
-
             <div className="col-2">
-              <h5><NavLink target="_blank" to="https://zeno.fm/radio/san-tech/" className="header-bottom-link"> <MdOutlineRadio style={{fontSize:"1.4rem", marginTop:"-2px"}}/> Radio </NavLink></h5>
-
+              <h5>
+                <NavLink
+                  target="_blank"
+                  to="https://zeno.fm/radio/san-tech/"
+                  className="header-bottom-link"
+                >
+                  
+                  <MdOutlineRadio
+                    style={{ fontSize: "1.4rem", marginTop: "-2px" }}
+                  />
+                  SanTech Radio
+                </NavLink>
+              </h5>
             </div>
+            
           </div>
         </div>
       </div>
@@ -134,4 +171,3 @@ const Header = () => {
 };
 
 export default Header;
-
