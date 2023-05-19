@@ -7,7 +7,6 @@ import GoToTop from "./components/GoToTop";
 import About from "./pages/about";
 import Initiatives from "./pages/initiatives";
 import Story from "./pages/story";
-import Opportunities from "./pages/opportunities";
 import Updates from "./pages/updates";
 import Contact from "./pages/contact";
 
@@ -22,7 +21,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="iniative" element={<Initiatives />} />
         <Route path="story" element={<Story />} />
-        <Route path="opportunities" element={<Opportunities />} />
+        
         <Route path="updates" element={<Updates />} />
         <Route path="contact" element={<Contact />} />
       </Routes>

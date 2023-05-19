@@ -503,12 +503,11 @@ const Home = () => {
             spaceBetween={2}
             slidesPerView={4}
             navigation
-        
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
             style={{marginTop:"6rem"}}
           >
-            <SwiperSlide>
+            <SwiperSlide style={{marginLeft:"4rem"}}>
             <div class="card" style={{width: "25rem", borderBottom:"3px solid #03037f"}}>
 
               <img
