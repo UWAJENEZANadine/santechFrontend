@@ -75,12 +75,12 @@ const About = () => {
 
         <div className="container">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-md-5">
               <div class="card">
                 <div class="card-body">
                   <img
                     src="https://media.licdn.com/dms/image/C4D03AQEQYBYpvuIxUQ/profile-displayphoto-shrink_800_800/0/1616165515838?e=1689811200&v=beta&t=05iMXwuo5Np3oMA74Sey3zuXj6sLOc0Z1BFxwM8RM2I"
-                    style={{ height: "44vh" }}
+                    style={{ height: "44vh"}}
                   />
                   <h3 class="card-title mb-3">Shema Pacifique</h3>
                   <div className="">
@@ -93,7 +93,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-md-5">
               <div class="card">
                 <div class="card-body">
                   <img src={claud} style={{ height: "44vh" }} />
