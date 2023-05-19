@@ -28,7 +28,7 @@ const Header = () => {
     <>
       <div className="header-container">
         <div className="container-fluid">
-          <div className="row row-cols-1 row-cols-sm-2 header-container-top">
+          <div className="row row-cols-1 row-cols-sm-1 header-container-top">
             <div className="col">
               <h4>
                 <img src={business} /> Smart Applications and Networking
@@ -60,7 +60,7 @@ const Header = () => {
           </div>
         </div>
         <div className="header-container-middle">
-          <div className="row">
+          <div className="row row-cols-1 row-cols-sm-1 row-cols-md-4">
             <div className="col">
               <h1>
                 <span
@@ -72,8 +72,10 @@ const Header = () => {
                 <span style={{ color: "#88898d", fontWeight: "700" }}>
                   TECH
                 </span>
+               
               </h1>
               <div className="header-container-middle-line-text"></div>
+               <h5 className="text-white text-uppercase mt-1" style={{letterSpacing:"2px"}}>Making your Ideas happen!</h5>
             </div>
             <div className="col d-sm-none d-md-none d-lg-block">
               <input
