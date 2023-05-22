@@ -32,7 +32,7 @@
   border-radius: 2rem;
   background-color: #f0fdfa;
   padding: 2rem;
-  height: 50vh; 
+  min-height: 50vh; 
  
 }
 

@@ -126,9 +126,9 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="col-9">
               <Nav className="">
-                <Nav.Link className="last-link  last-link-home"
+                <Nav.Link className="last-link  last-link-home text-center"
                   href="home"
-                  style={{ fontSize: "1.5rem",color:"#3b82f6" }}
+                  style={{ fontSize: "1.5rem",color:"#3b82f6"}}
                 >
                   HOME
                 </Nav.Link>
@@ -145,7 +145,7 @@ const Header = () => {
                   SUCCESS STORIES
                 </Nav.Link>
                 <Nav.Link className="last-link"
-                  href="#services"
+                  href="resources"
                   style={{fontSize: "1.5rem",  padding:"1rem" ,color:"#3b82f6"}}
                 >
                   RESOURCES

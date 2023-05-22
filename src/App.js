@@ -5,10 +5,9 @@ import Home from "./pages/home";
 import Footer from "./components/footer";
 import GoToTop from "./components/GoToTop";
 import About from "./pages/about";
-import Initiatives from "./pages/initiatives";
 import Story from "./pages/story";
-import Updates from "./pages/updates";
 import Contact from "./pages/contact";
+import Resources from "./pages/resources";
 
 function App() {
   return (
@@ -19,11 +18,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="iniative" element={<Initiatives />} />
         <Route path="story" element={<Story />} />
-        
-        <Route path="updates" element={<Updates />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="resources" element={<Resources />} />
       </Routes>
       <GoToTop />
       <Footer />

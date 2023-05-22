@@ -7,8 +7,6 @@
 }
 .Header-container {
   min-height: 35vh;
-
-
 }
 .Top-part {
   height: 8vh;
@@ -40,11 +38,10 @@
 }
 .Middle-part {
   height: 15vh;
-  
+
   background-color: #e9eaec;
- 
+
   padding: 0% 6% 0% 6%;
- 
 }
 .Middle-part-line-text {
   height: 1vh;
@@ -113,50 +110,49 @@
   font-size: 2rem;
 }
 
-.Santech-text-span-1{
+.Santech-text-span-1 {
   font-weight: 900;
   padding: 1rem;
   color: #014b7c;
   letter-spacing: 2rem;
 }
-.Santech-text-span2{
+.Santech-text-span2 {
   font-weight: 900;
   padding: 1rem;
   color: #88898d;
   letter-spacing: 2rem;
 }
 .Santech-text-span3 {
-  letter-spacing:"2px";
-  color:"#014b7c"
-
+  letter-spacing: "2px";
+  color: "#014b7c";
 }
-.last-link-home{
+.last-link{
+  text-align: center;
+}
+.last-link-home {
   padding: 1rem;
   font-size: 1.5rem;
   margin-left: 10rem;
-  color: #3b82f6,
-
+  color: #3b82f6;
+ margin-top: .4rem;
 }
-.last-link-radio{
+.last-link-radio {
   padding: 3rem;
 }
 
-
-
-@media only screen and (max-width: 490px) and (min-width: 200px){ 
-  .Santech-text-logo{
+@media only screen and (max-width: 490px) and (min-width: 200px) {
+  .Santech-text-logo {
     padding-right: 15rem;
   }
-  .Santech-text-span-1{
+  .Santech-text-span-1 {
     letter-spacing: 3px;
     font-size: 1.3rem;
   }
-  .Santech-text-span2{
+  .Santech-text-span2 {
     letter-spacing: 3px;
     font-size: 1.3rem;
-   
   }
-  .Santech-text-span3{
+  .Santech-text-span3 {
     font-size: 1.3rem;
     letter-spacing: 0px;
   }
@@ -176,7 +172,6 @@
     transition: all 0.2s;
     margin-right: -3.25rem;
   }
-
 }
 @media only screen and (max-width: 500px) {
   .search {
@@ -187,8 +182,6 @@
   .Middle-part-call {
     display: none;
   }
-  
- 
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -197,18 +190,17 @@
   }
 }
 
-@media only screen and (max-width:  576px){
-  .Santech-text-logo{
+@media only screen and (max-width: 576px) {
+  .Santech-text-logo {
     padding-right: 18rem;
   }
-  .Santech-text-span-1{
+  .Santech-text-span-1 {
     letter-spacing: 5px;
     font-size: 1.3rem;
   }
-  .Santech-text-span2{
+  .Santech-text-span2 {
     letter-spacing: 5px;
     font-size: 1.3rem;
-   
   }
   .search__icon {
     height: 1.5rem;
@@ -221,44 +213,32 @@
     padding: 1rem 1rem;
     width: 100%;
   }
-  .last-link-home{
+  .last-link-home {
     padding: 1rem;
     margin-left: 10px;
-    color: #3b82f6,
-  
+    color: #3b82f6;
   }
-  .last-link-radio{
-    margin-left: 10px, 
-
+  .last-link-radio {
+    margin-left: -50px;
   }
 }
-@media only screen and (max-width:  768px){
-  .last-link-home{
+@media only screen and (max-width: 768px) {
+  .last-link-home {
     padding: 1rem;
     margin-left: 10px;
-    color: #3b82f6,
-  
+    color: #3b82f6;
   }
-  
+  .last-link-radio {
+    margin-left: -50px;
+  }
 }
-@media only screen and (max-width:  992px){
-  .last-link-home{
+@media only screen and (max-width: 992px) {
+  .last-link-home {
     padding: 1rem;
     margin-left: 10px;
-   
-  
   }
-  .Santech-text-logo{
-    padding-right: 17rem;
-  }
-  
-}
-@media only screen and (max-width:  1200px){
-  .last-link-home{
-    padding: 1rem;
-    margin-left: 10px;
-   
-  
+  .Santech-text-logo {
+    /* padding-right: 17rem; */
   }
 }
 
@@ -270,16 +250,14 @@
 .last-part {
   padding: 0% 6% 0% 6%;
   background-color: #f9fafb;
-  
 }
 
-.last-link:hover{
+.last-link:hover {
   text-decoration: none;
   background-color: #0c4a6e;
   color: #fff;
   border-radius: 50% 0% 50% 0%;
   transition: 2s all;
-
 }
 
 select {
