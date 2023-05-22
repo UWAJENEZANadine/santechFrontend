@@ -55,6 +55,7 @@ const Header = () => {
               Application
             </NavLink>
           </h5>
+          {/* <div id="google_translate_element" className="bg-white px-2" style={{border:"none"}}></div> */}
         </div>
       </div>
 
@@ -134,7 +135,7 @@ const Header = () => {
                 </Nav.Link>
                 <Nav.Link className="last-link"
                   href="about"
-                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6" }}
+                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6", }}
                 >
                   ABOUT
                 </Nav.Link>
@@ -143,12 +144,6 @@ const Header = () => {
                   style={{ fontSize: "1.5rem" , padding:"1rem",color:"#3b82f6"}}
                 >
                   SUCCESS STORIES
-                </Nav.Link>
-                <Nav.Link className="last-link"
-                  href="resources"
-                  style={{fontSize: "1.5rem",  padding:"1rem" ,color:"#3b82f6"}}
-                >
-                  RESOURCES
                 </Nav.Link>
                 <Nav.Link className="last-link"
                   href="contact"
@@ -164,7 +159,7 @@ const Header = () => {
                   href="https://zeno.fm/radio/san-tech/" target="__blank"
                   style={{fontSize: "1.5rem",color:"#3b82f6" }}
                 >
-                  <MdOutlineRadio style={{marginTop:"-7px"}}/> SANTECH RADIO
+                  <MdOutlineRadio style={{marginTop:"-6px"}}/> SANTECH RADIO
                 </Nav.Link>
               </Nav>
             </div>
