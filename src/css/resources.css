@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.resources-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+.resources-container-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.resources-container-content h1{
+  font-weight: 900;
+
+
+}
+.resources-line{
+  width: 190%;
+  height: 2px;
+  background-color: #014b7c;
+  margin-bottom: 3rem;
+}
+.resources-container h2{
+  color: #014b7c;
+
+}

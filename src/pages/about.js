@@ -27,8 +27,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="container mission-container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-around gx-5">
+        <div className="container  mission-container">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-around">
             <div className="col mb-5">
               <h1>
                 <ImPushpin className="mission-container-icon" />
@@ -51,7 +51,7 @@ const About = () => {
                 our customers.
               </p>
             </div>
-            <div className="col mb-5">
+            <div className="col mb-5 p-5">
               <h1>
                 <SiReactos className="mission-container-icon" />{" "}
                 <span className="ms-4"> Values </span>

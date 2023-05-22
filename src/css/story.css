@@ -34,13 +34,16 @@
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   /* letter-spacing: .5rem; */
-  font-weight: 900;
+  font-weight: 700;
+  line-height: 5rem;
+  
 
 }
 
 .Success-video-detail-in  p{
   font-size: 1.5rem;
   width: 70%;
+  font-weight: 300;
 }
 .Success-video-detail-in{
 
