@@ -7,6 +7,7 @@ const Resources = () => {
       <h1>Resources</h1>
       <div className='resources-line'></div>
       <h2>Most recommend</h2>
+      <p>SanTech Resources</p>
 
       <p></p>
 
