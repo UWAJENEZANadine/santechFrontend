@@ -130,6 +130,17 @@
   color:"#014b7c"
 
 }
+.last-link-home{
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-left: 10rem;
+  color: #3b82f6,
+
+}
+.last-link-radio{
+  padding: 3rem;
+}
+
 
 
 @media only screen and (max-width: 490px) and (min-width: 200px){ 
@@ -176,7 +187,8 @@
   .Middle-part-call {
     display: none;
   }
-
+  
+ 
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -187,14 +199,14 @@
 
 @media only screen and (max-width:  576px){
   .Santech-text-logo{
-    padding-right: 15rem;
+    padding-right: 18rem;
   }
   .Santech-text-span-1{
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size: 1.3rem;
   }
   .Santech-text-span2{
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size: 1.3rem;
    
   }
@@ -209,8 +221,45 @@
     padding: 1rem 1rem;
     width: 100%;
   }
+  .last-link-home{
+    padding: 1rem;
+    margin-left: 10px;
+    color: #3b82f6,
+  
+  }
+  .last-link-radio{
+    margin-left: 10px, 
 
-
+  }
+}
+@media only screen and (max-width:  768px){
+  .last-link-home{
+    padding: 1rem;
+    margin-left: 10px;
+    color: #3b82f6,
+  
+  }
+  
+}
+@media only screen and (max-width:  992px){
+  .last-link-home{
+    padding: 1rem;
+    margin-left: 10px;
+   
+  
+  }
+  .Santech-text-logo{
+    padding-right: 17rem;
+  }
+  
+}
+@media only screen and (max-width:  1200px){
+  .last-link-home{
+    padding: 1rem;
+    margin-left: 10px;
+   
+  
+  }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 700px) {

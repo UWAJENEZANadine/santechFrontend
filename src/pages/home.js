@@ -512,7 +512,7 @@ const Home = () => {
 
               <img
                 src="https://pbs.twimg.com/profile_images/1014071220583784448/ZGDmicJm_400x400.jpg"
-                style={{ width: "100%" }}
+                style={{ width: "100%", height:"41vh"  }}
               />
               </div>
             </SwiperSlide>

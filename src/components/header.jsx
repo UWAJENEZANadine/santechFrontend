@@ -126,14 +126,9 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="col-9">
               <Nav className="">
-                <Nav.Link className="last-link"
+                <Nav.Link className="last-link  last-link-home"
                   href="home"
-                  style={{
-                    padding:"1rem",
-                    fontSize: "1.5rem",
-                    marginLeft: "10rem",
-                    color:"#3b82f6",
-                  }}
+                  style={{ fontSize: "1.5rem",color:"#3b82f6" }}
                 >
                   HOME
                 </Nav.Link>
@@ -165,9 +160,9 @@ const Header = () => {
             </div>
             <div className="col">
               <Nav>
-                <Nav.Link className="last-link"
+                <Nav.Link className="last-link last-link-radio "
                   href="#home"
-                  style={{ marginLeft: "3rem", fontSize: "1.5rem",color:"#3b82f6" }}
+                  style={{fontSize: "1.5rem",color:"#3b82f6" }}
                 >
                   <MdOutlineRadio style={{marginTop:"-7px"}}/> SANTECH RADIO
                 </Nav.Link>
