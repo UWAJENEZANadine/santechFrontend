@@ -161,7 +161,7 @@ const Header = () => {
             <div className="col">
               <Nav>
                 <Nav.Link className="last-link last-link-radio "
-                  href="#home"
+                  href="https://zeno.fm/radio/san-tech/" target="__blank"
                   style={{fontSize: "1.5rem",color:"#3b82f6" }}
                 >
                   <MdOutlineRadio style={{marginTop:"-7px"}}/> SANTECH RADIO
