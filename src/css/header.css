@@ -112,7 +112,60 @@
   color: #ccc;
   font-size: 2rem;
 }
-.Middle-part-call {
+
+.Santech-text-span-1{
+  font-weight: 900;
+  padding: 1rem;
+  color: #014b7c;
+  letter-spacing: 2rem;
+}
+.Santech-text-span2{
+  font-weight: 900;
+  padding: 1rem;
+  color: #88898d;
+  letter-spacing: 2rem;
+}
+.Santech-text-span3 {
+  letter-spacing:"2px";
+  color:"#014b7c"
+
+}
+
+
+@media only screen and (max-width: 490px) and (min-width: 200px){ 
+  .Santech-text-logo{
+    padding-right: 15rem;
+  }
+  .Santech-text-span-1{
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+  }
+  .Santech-text-span2{
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+   
+  }
+  .Santech-text-span3{
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+  }
+  .search {
+    order: 2;
+    flex: 0 0 20%;
+    background-color: #fff;
+  }
+  .search__input {
+    font-family: sans-serif;
+    font-size: 9px;
+    background-color: #fff;
+    color: inherit;
+    border: none;
+    padding: 1rem 1rem;
+    width: 100%;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+  }
+
 }
 @media only screen and (max-width: 500px) {
   .search {
@@ -123,12 +176,41 @@
   .Middle-part-call {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 575.98px) {
   .Middle-part-call {
     display: none;
   }
+}
+
+@media only screen and (max-width:  576px){
+  .Santech-text-logo{
+    padding-right: 15rem;
+  }
+  .Santech-text-span-1{
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+  }
+  .Santech-text-span2{
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+   
+  }
+  .search__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #999;
+    margin-left: 4px;
+  }
+  .search__input {
+    font-family: sans-serif;
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+
+
 }
 
 @media only screen and (max-width: 900px) and (min-width: 700px) {
