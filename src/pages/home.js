@@ -498,85 +498,132 @@ const Home = () => {
             />
           </h1>
 
-          <Swiper
+          <Swiper className="swiper-container"
+            breakpoints={{
+              576:{
+                width: 350,
+                slidesPerView: 1,
+              },
+              
+              
+              768: {
+                width: 768,
+                slidesPerView: 2,
+              },
+             
+              992: {
+                width: 992,
+                slidesPerView: 2,
+              },
+              1200:{
+                width: 1200,
+                slidesPerView: 4,
+
+              },
+              1400:{
+                width: 992,
+                slidesPerView: 4,
+
+              }
+            }}
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={2}
-            slidesPerView={4}
+            spaceBetween={4}
             navigation
+            loop= {true}
+            
+           
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-            style={{marginTop:"6rem"}}
+           
+            style={{ marginTop: "6rem" }}
           >
-            <SwiperSlide style={{marginLeft:"4rem"}}>
-            <div class="card" style={{width: "25rem", borderBottom:"3px solid #03037f"}}>
-
-              <img
-                src="https://pbs.twimg.com/profile_images/1014071220583784448/ZGDmicJm_400x400.jpg"
-                style={{ width: "100%", height:"41vh"  }}
-              />
+            <SwiperSlide style={{ marginLeft: "4rem" }}>
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://pbs.twimg.com/profile_images/1014071220583784448/ZGDmicJm_400x400.jpg"
+                  style={{ width: "100%", height: "40vh" }}
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div class="card" style={{width: "25rem",borderBottom:"3px solid #03037f"}}>
-              
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
-                style={{ width: "93%" }}
-              />
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
+                  style={{ width: "93%" }}
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div class="card" style={{width: "25rem",borderBottom:"3px solid #03037f"}}>
-              <img
-                src="https://www.learningpassport.org/sites/unicef.org.learningpassport/files/styles/crop_thumbnail/public/partner-logo_Generation-Unlimited.png?itok=DTCZ6Hcv"
-                style={{ width: "100%", height:"40vh" }}
-              />
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://www.learningpassport.org/sites/unicef.org.learningpassport/files/styles/crop_thumbnail/public/partner-logo_Generation-Unlimited.png?itok=DTCZ6Hcv"
+                  style={{ width: "100%", height: "40vh" }}
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div class="card" style={{width: "25rem",borderBottom:"3px solid #03037f"}}>
-              <img
-                src="https://thumbs.dreamstime.com/b/unicef-united-nations-international-children-s-emergency-fund-flag-waving-white-background-close-up-isolated-d-render-realistic-169592090.jpg"
-                style={{ width: "100%",height:"40vh" }}
-              />
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://thumbs.dreamstime.com/b/unicef-united-nations-international-children-s-emergency-fund-flag-waving-white-background-close-up-isolated-d-render-realistic-169592090.jpg"
+                  style={{ width: "100%", height: "40vh" }}
+                />
               </div>
-             
             </SwiperSlide>
             <SwiperSlide>
-            <div class="card" style={{width: "25rem",borderBottom:"3px solid #03037f"}}>
-              <img
-                src="https://pbs.twimg.com/profile_images/1512032108876865536/s2MqZaRv_400x400.jpg"
-                style={{ width: "100%" }}
-              />
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://pbs.twimg.com/profile_images/1512032108876865536/s2MqZaRv_400x400.jpg"
+                  style={{ width: "100%" }}
+                />
               </div>
-             
             </SwiperSlide>
             <SwiperSlide>
-            <div class="card" style={{width: "25rem",borderBottom:"3px solid #03037f"}}>
-              <img
-                src="https://caribbean.eclac.org/sites/default/files/organizations/images/UN%20logo.png"
-                style={{ width: "100%" }}
-              />
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://caribbean.eclac.org/sites/default/files/organizations/images/UN%20logo.png"
+                  style={{ width: "100%" }}
+                />
               </div>
-             
             </SwiperSlide>
             <SwiperSlide>
-            <div class="card" style={{width: "25rem",borderBottom:"3px solid #03037f"}}>
-              <img
-                src="https://thumbs.dreamstime.com/b/mastercard-logo-printed-paper-chisinau-moldova-september-mastercard-logo-printed-paper-placed-white-background-128373484.jpg"
-                style={{ width: "100%", height:"39vh" }}
-              />
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://thumbs.dreamstime.com/b/mastercard-logo-printed-paper-chisinau-moldova-september-mastercard-logo-printed-paper-placed-white-background-128373484.jpg"
+                  style={{ width: "100%", height: "39vh" }}
+                />
               </div>
-             
             </SwiperSlide>
             <SwiperSlide>
-            <div class="card" style={{width: "25rem",borderBottom:"3px solid #03037f"}}>
-              <img
-                src="https://www.risa.gov.rw/index.php?eID=dumpFile&t=f&f=52253&token=97a6bf4950ecf39417b4b7babc6b7a70a6712ffa"
-                style={{ width: "100%", height:"39vh" }}
-              />
+              <div
+                class="card"
+                style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+              >
+                <img
+                  src="https://www.risa.gov.rw/index.php?eID=dumpFile&t=f&f=52253&token=97a6bf4950ecf39417b4b7babc6b7a70a6712ffa"
+                  style={{ width: "100%", height: "39vh" }}
+                />
               </div>
-             
             </SwiperSlide>
           </Swiper>
         </div>

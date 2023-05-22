@@ -7,12 +7,14 @@ import GoToTop from "./components/GoToTop";
 import About from "./pages/about";
 import Story from "./pages/story";
 import Contact from "./pages/contact";
-import Resources from "./pages/resources";
+
 
 function App() {
   return (
     <>
+    
       <Header />
+      
       
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +22,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="story" element={<Story />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="resources" element={<Resources />} />
+       
       </Routes>
       <GoToTop />
       <Footer />
