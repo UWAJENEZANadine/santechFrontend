@@ -60,18 +60,17 @@ const Header = () => {
 
       <div className="Middle-part d-flex justify-content-between align-items-center">
         <div className="">
-          <h1>
-            <span
-              style={{ fontWeight: "900", padding: "1rem", color: "#014b7c", letterSpacing:"2rem" }}
+          <h1 className="Santech-text-logo">
+            <span className="Santech-text-span-1"
             >
               SAN
             </span>
-            <span style={{ color: "#88898d", fontWeight: "700", letterSpacing:"2rem"  }}>TECH</span>
+            <span className="Santech-text-span2">TECH</span>
           </h1>
           <div className="Middle-part-line-text"></div>
           <h5
-            className="text-uppercase mt-3"
-            style={{ letterSpacing: "2px", color: "#014b7c" }}
+            className="text-uppercase Santech-text-span3  mt-3"
+            
           >
             <i>Making your Ideas happen!</i>
           </h5>

@@ -211,7 +211,7 @@ const Home = () => {
                   <Card.Img
                     variant="top"
                     src="https://pbs.twimg.com/media/Fm1dzrQWAAIxoZB?format=jpg&name=medium"
-                    style={{ height: "38vh" }}
+                    style={{ height: "34vh" }}
                   />
                   <Card.Body>
                     <Card.Title className="latest-news-container-header-card fs-2 text-center text-uppercase fw-bold mb-5">
