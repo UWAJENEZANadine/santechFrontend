@@ -7,6 +7,8 @@ import GoToTop from "./components/GoToTop";
 import About from "./pages/about";
 import Story from "./pages/story";
 import Contact from "./pages/contact";
+import Gallery from "./pages/gallery";
+import Blog from "./pages/TechBlog";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="story" element={<Story />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="blog" element={<Blog />} />
        
       </Routes>
       <GoToTop />
