@@ -539,7 +539,7 @@ const Home = () => {
           >
             <SwiperSlide style={{ marginLeft: "4rem" }}>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img
@@ -550,7 +550,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img
@@ -561,7 +561,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img
@@ -572,7 +572,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img
@@ -583,7 +583,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img
@@ -594,7 +594,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img
@@ -605,7 +605,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img
@@ -616,7 +616,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                class="card"
+                class="card partners-card"
                 style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
               >
                 <img

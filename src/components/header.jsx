@@ -36,12 +36,12 @@ const Header = () => {
         </div>
         <div className="Top-part-link-container d-flex justify-content-between align-items-center">
           <h5>
-            <NavLink className="Top-part-link" to="">
+            <NavLink className="Top-part-link" to="blog">
               Tech blog
             </NavLink>
           </h5>
           <h5>
-            <NavLink className="Top-part-link" to="">
+            <NavLink className="Top-part-link" to="gallery">
               Media
             </NavLink>
           </h5>
@@ -52,7 +52,7 @@ const Header = () => {
           </h5>
           <h5>
             <NavLink className="Top-part-link" to="">
-              Application
+              Join The Hub
             </NavLink>
           </h5>
           {/* <div id="google_translate_element" className="bg-white px-2" style={{border:"none"}}></div> */}

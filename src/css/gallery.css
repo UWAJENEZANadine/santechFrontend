@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300&family=Josefin+Sans:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Gallery-container {
+  min-height: 200vh;
+}
+
+.Gallery-container-video {
+  padding: 15rem 0;
+  /* background-color: #f7f7f7; */
+  position: relative;
+  margin-bottom: 13rem;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+  background-color: #000;
+
+  /* overflow: hidden; */ /*we use this when we use object-fit:cover*/
+}
+.bg-video__container {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  /* object-fit: cover; */
+  opacity: 0.2;
+}
+.bg-video h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+}
+.gallery-image {
+  background-color: #f3f4f6;
+  min-height: 150vh;
+}
+.parallelogram-card{
+  width: 30%;
+  background-color: #f3f4f6;
+  padding: 2rem;
+}
+.parallelogram {
+  background: blue;
+  height: 20vh;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+}
+
