@@ -2,6 +2,7 @@ import React from "react";
 import "../css/gallery.css";
 import video from "../assets/coverr-a-man-comes-into-his-office-3446-1080p.mp4";
 import gallery from "../assets/constants/gallery.json";
+import GalleryCard from "../components/galleryCard";
 
 const Gallery = () => {
   return (
@@ -19,9 +20,9 @@ const Gallery = () => {
         </div>
       </section>
       <div className="gallery-image">
-        <div className="card parallelogram-card">
-        <div class="parallelogram"></div>
-        </div>
+        {gallery.map((data) => (
+          <GalleryCard data={data} />
+        ))}
       </div>
     </div>
   );

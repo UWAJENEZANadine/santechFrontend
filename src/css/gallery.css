@@ -48,13 +48,20 @@
   min-height: 150vh;
 }
 .parallelogram-card{
-  width: 30%;
   background-color: #f3f4f6;
   padding: 2rem;
+ 
 }
 .parallelogram {
   background: blue;
   height: 20vh;
   clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+
+}
+.parallelogram-card .card img:hover{
+  transform: scale(1.1);
+  transition: 2s all;
+  opacity: .4;
+
 }
 

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300&family=Josefin+Sans:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-part-blog{
+  position: relative;
+ 
+}
+.top-part-blog-row {
+  background-color: #000;
+}
+.top-part-blog-combine {
+  min-height: 80vh;
+}
+.blog-image-container {
+  opacity: 0.5;
+}
+.top-part-blog-row h1 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  background-color: #03037f;
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.top-part-blog-row p {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', Times, serif;
+  letter-spacing: .1rem;
+}
+@media only screen and (max-width: 576px) {
+  .top-part-blog-row p {
+    display: none;
+  }
+  .top-part-blog-row h1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  .blog-left-side p {
+    display: none;
+  }
+  .blog-left-side h1 {
+    display: none;
+  }
+
+  .blog-left-side-bottom p {
+    display: none;
+  }
+  .blog-left-side-bottom h1 {
+    display: none;
+  }
+  .blog-left-side-bottom-right h1 {
+    display: none;
+  }
+  .blog-left-side-bottom-right p {
+    display: none;
+  }
+}
+.blog-left-side h1 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: #03037f;
+}
+.blog-left-side p {
+  position: absolute;
+  top: 36%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+}
+.blog-left-side .user-date {
+  position: absolute;
+  top: 40%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.blog-left-side-bottom h1 {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: #03037f;
+}
+
+.blog-left-side-bottom p {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+.blog-left-side-bottom .user-date {
+  position: absolute;
+  top: 75%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.blog-left-side-bottom-right h1 {
+  position: absolute;
+  top: 55%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  background-color: #693e29;
+}
+.blog-left-side-bottom-right p {
+  position: absolute;
+  top: 75%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+.blog-left-side-bottom-right .user-date {
+  position: absolute;
+  top: 78%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.blog-update-container{
+  padding: 0rem 5rem 0rem 5rem;
+}
+.blog-update-container img{
+  width: 100%;
+  height: 30vh;
+}

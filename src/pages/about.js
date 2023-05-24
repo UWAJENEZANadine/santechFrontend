@@ -22,6 +22,7 @@ const About = () => {
             <div className="col">
               <p className="fs-4 w-75">
                 Learn more about aour company and the team behind it.
+                
               </p>
             </div>
           </div>
