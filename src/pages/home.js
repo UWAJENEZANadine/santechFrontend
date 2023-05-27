@@ -12,6 +12,7 @@ import { AiFillStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -550,7 +551,7 @@ const Home = () => {
                 </figcaption>
               </figure>
               <button className="btn-inline">
-                show all <span>&rarr;</span>
+                <Link to="/story" style={{textDecoration:"none", color:"#03037f"}}>show all </Link>  <span>&rarr;</span>
               </button>
             </div>
           </div>

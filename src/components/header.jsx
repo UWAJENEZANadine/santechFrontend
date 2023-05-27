@@ -129,25 +129,25 @@ const Header = () => {
               <Nav className="">
                 <Nav.Link className="last-link  last-link-home text-center"
                   href="home"
-                  style={{ fontSize: "1.5rem",color:"#3b82f6"}}
+                  style={{ fontSize: "1.5rem",color:"#3b82f6", fontWeight:"600"}}
                 >
                   HOME
                 </Nav.Link>
                 <Nav.Link className="last-link"
                   href="about"
-                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6", }}
+                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6", fontWeight:"600" }}
                 >
                   ABOUT
                 </Nav.Link>
                 <Nav.Link className="last-link"
                   href="story"
-                  style={{ fontSize: "1.5rem" , padding:"1rem",color:"#3b82f6"}}
+                  style={{ fontSize: "1.5rem" , padding:"1rem",color:"#3b82f6", fontWeight:"600"}}
                 >
                   SUCCESS STORIES
                 </Nav.Link>
                 <Nav.Link className="last-link"
                   href="contact"
-                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6" }}
+                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6", fontWeight:"600" }}
                 >
                   CONTACT US
                 </Nav.Link>
@@ -157,7 +157,7 @@ const Header = () => {
               <Nav>
                 <Nav.Link className="last-link last-link-radio "
                   href="https://zeno.fm/radio/san-tech/" target="__blank"
-                  style={{fontSize: "1.5rem",color:"#3b82f6" }}
+                  style={{fontSize: "1.5rem",color:"#3b82f6", fontWeight:"600" }}
                 >
                   <MdOutlineRadio style={{marginTop:"-6px"}}/> SANTECH RADIO
                 </Nav.Link>
