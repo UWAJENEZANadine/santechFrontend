@@ -19,7 +19,9 @@ const Story = () => {
         >
           <SwiperSlide style={{ marginLeft: "4rem" }}>
             <div className="Success-Story-whole-part ">
-              <h1 className="text-center text-black">
+              <h1 className="text-center text-black"  data-aos="fade-up-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 Success <span style={{ color: "#03037f" }}> Stories </span>
               </h1>
               <div className="d-sm-flex flex-row justify-content-around align-items-center">

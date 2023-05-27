@@ -151,7 +151,12 @@ const Home = () => {
         <section className="second-part container-fluid">
           <div className="second-part-service container">
             <div className="row">
-              <div className="col p-5">
+              <div
+                className="col p-5"
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <h1 className="display-6">
                   <FcAbout className="about-icon" />
                   <span className="about-icon-header">SAN TECH HUB</span>
@@ -164,7 +169,12 @@ const Home = () => {
                   <li>Post registration filling</li>
                 </ul>
               </div>
-              <div className="col p-5">
+              <div
+                className="col p-5"
+                data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <h1 className="display-6">
                   <FcElectricity className="about-icon" />
                   <span className="about-icon-header">E-vistors system</span>
@@ -177,7 +187,12 @@ const Home = () => {
                   <li>Post registration filling</li>
                 </ul>
               </div>
-              <div className="col p-5">
+              <div
+                className="col p-5"
+                data-aos="fade-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <h1 className="display-6">
                   <FcRadarPlot className="about-icon" />
                   <span className="about-icon-header">Annika Technology</span>
@@ -195,13 +210,23 @@ const Home = () => {
         </section>
 
         <div className="latest-news-container p-4">
-          <h1 className="latest-news-container-header text-uppercase">
+          <h1
+            className="latest-news-container-header text-uppercase"
+            data-aos="fade-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             Latest News
           </h1>
 
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 pt-5">
-              <div className="col mb-5">
+              <div
+                className="col mb-5"
+                data-aos="fade-up-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <Card
                   style={{
                     width: "35rem",
@@ -232,7 +257,12 @@ const Home = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col mb-5">
+              <div
+                className="col mb-5"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <Card
                   style={{
                     width: "35rem",
@@ -262,7 +292,12 @@ const Home = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col mb-5">
+              <div
+                className="col mb-5"
+                data-aos="fade-up-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <Card
                   style={{
                     width: "35rem",
@@ -292,7 +327,12 @@ const Home = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col">
+              <div
+                className="col"
+                data-aos="fade-up-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <Card
                   style={{
                     width: "35rem",
@@ -322,7 +362,12 @@ const Home = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col">
+              <div
+                className="col"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <Card
                   style={{
                     width: "35rem",
@@ -352,7 +397,12 @@ const Home = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col">
+              <div
+                className="col"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <Card
                   style={{
                     width: "35rem",
@@ -388,7 +438,12 @@ const Home = () => {
         <div className="Testmonial-container container-fluid">
           <h1 className="text-center mt-4">Testmonials</h1>
           <div className="Testmonial">
-            <div className="description">
+            <div
+              className="description"
+              data-aos="fade-up-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <h2 className="Testmonial-heading">It was a great Experience</h2>
               <p>
                 <span>
@@ -407,14 +462,24 @@ const Home = () => {
                   <AiFillStar className="testmonial-star testmonial-star-2" />
                 </span>
               </p>
-              <p className="paragraph">
+              <p
+                className="paragraph"
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+              >
                 We had a brilliant experience working with SanTech. They
                 delivered great solutions using cutting edge techniques. The
                 quality of their work was excellent and We had a brilliant
                 experience working with SanTech. They delivered great solutions
                 using cutting edge techniques.
               </p>
-              <p className="paragraph">
+              <p
+                className="paragraph"
+                data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+              >
                 We had a brilliant experience working with SanTech. They
                 delivered great solutions using cutting edge techniques. The
                 quality of their work was excellent and
@@ -443,7 +508,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="user-reviews">
+            <div
+              className="user-reviews"
+              data-aos="fade-up-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <figure className="review">
                 <blockquote className="review__text">
                   I just wanted to share a quick note and let you know that you
@@ -486,55 +556,58 @@ const Home = () => {
           </div>
         </div>
         <div className="our-partners-container">
-          <h1 className="our-partners text-uppercase text-center font-weight-bold mb-5">
+          <h1 className="our-partners text-uppercase text-center font-weight-bold mb-5" data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
             <img
               className=""
               src="https://www.girlsinict.rw/images/title-design.png"
             />
-            <span className="p-5"> Our Partners</span>
+            <span
+              className="p-5"
+              
+            >
+          
+              Our Partners
+            </span>
             <img
               className=""
               src="https://www.girlsinict.rw/images/title-design.png"
             />
           </h1>
 
-          <Swiper className="swiper-container"
+          <Swiper
+            className="swiper-container"
             breakpoints={{
-              576:{
+              576: {
                 width: 350,
                 slidesPerView: 1,
               },
-              
-              
+
               768: {
                 width: 768,
                 slidesPerView: 2,
               },
-             
+
               992: {
                 width: 992,
                 slidesPerView: 2,
               },
-              1200:{
+              1200: {
                 width: 1200,
                 slidesPerView: 4,
-
               },
-              1400:{
+              1400: {
                 width: 992,
                 slidesPerView: 4,
-
-              }
+              },
             }}
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={4}
             navigation
-            loop= {true}
-            
-           
+            loop={true}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-           
             style={{ marginTop: "6rem" }}
           >
             <SwiperSlide style={{ marginLeft: "4rem" }}>

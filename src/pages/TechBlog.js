@@ -2,87 +2,46 @@ import React from "react";
 import "../css/techBlog.css";
 import blogs from "../assets/constants/blog.json";
 import BlogCard from "../components/blogCard";
-import blogUpdate from "../assets/blog.PNG"
+import { Link } from "react-router-dom"
 const Blog = () => {
   return (
     <>
-   
-      <div className="top-part-blog container">
-        <div className="row top-part-blog-combine ">
-          <div className="col-sm-12 col-md-6 mb-3">
-            <div className="top-part-blog-row">
-              <img
-                className="blog-image-container"
-                src="https://pbs.twimg.com/media/Fwatpa9aUA0nvM1?format=jpg&name=4096x4096"
-                style={{ width: "100%", height: "65vh" }}
-              />
-              <h1 className="text-white">Featured</h1>
-              <p className="text-white">
-                SAN TECH was founded by young Rwandan Software Engineers to
-                contribute to the national
-              </p>
+      <div className="Tech-container">
+        <div
+          className="container-fluid Tech-container-head"
+          style={{ backgroundColor: "#000" }}
+        >
+          <div className="text-white align-items-center Tech-container-content">
+            <div className="mb-5 ">
+              <h1 className="text-center">News, Events & Resources </h1>
             </div>
           </div>
+        </div>
+        <div className="d-sm-flex flex-row header-update">
+          <div>
 
-          <div className="col-sm-12 col-md-6">
-            <div>
-              <div className="top-part-blog-row blog-left-side">
-                <img
-                  className="blog-image-container"
-                  src="https://pbs.twimg.com/media/Fm1dzrQWAAIxoZB?format=jpg&name=medium"
-                  style={{ width: "100%", height: "34vh" }}
-                />
-                <h1 className="text-white">Internship</h1>
-                <p className="text-white">
-                  SAN TECH was founded by young 
-                </p>
-                <p className="user-date">Feb 23rd,2017</p>
-              </div>
-            </div>
-            <div className="row py-3">
-              <div className="col">
-                <div className=" top-part-blog-row blog-left-side-bottom">
-                  <img
-                    className="blog-image-container"
-                    src="https://pbs.twimg.com/media/Fwf47fpXoAI-Uc1?format=jpg&name=large"
-                    style={{ width: "100%", height: "30vh" }}
-                  />
-                  <h1 className="text-white">Conference</h1>
-                  <p className="text-white">
-                    SAN TECH was founded by young
-                  </p>
-                  <p className="user-date">Feb 23rd,2017</p>
-                </div>
-              </div>
-              <div className="col">
-                <div className=" top-part-blog-row blog-left-side-bottom-right">
-                  <img
-                    className="blog-image-container"
-                    src="https://pbs.twimg.com/media/Fwf48kRX0AAg1pZ?format=jpg&name=large"
-                    style={{ width: "100%", height: "30vh" }}
-                  />
-                  <h1 className="text-white">Others</h1>
-                  <p className="text-white">
-                    SAN TECH was founded by young 
-                  </p>
-                  <p className="user-date">Feb 23rd,2017</p>
-                </div>
-              </div>
-            </div>
+            <h1> <Link to="/blog" className="active-blog active-blog-all">All</Link></h1>
+          </div>
+          <div>
+
+            <h1> <Link to="/blog" className="active-blog" >Events</Link></h1>
+          </div>
+          <div>
+
+            <h1> <Link to="/blog" className="active-blog" >News</Link></h1>
+          </div>
+          <div>
+
+            <h1> <Link to="/blog" className="active-blog" >Resources</Link></h1>
           </div>
         </div>
       </div>
 
-     
-        <div className="blog-update-container">
-        <img src={blogUpdate}  style={{height:"5vh"}}/>
-          {blogs.map((data) => (
-            <BlogCard data={data} />
-          ))}
-        </div>
-
-     
-      
+      <div className="blog-update-container">
+        {blogs.map((data) => (
+          <BlogCard data={data} />
+        ))}
+      </div>
     </>
   );
 };
