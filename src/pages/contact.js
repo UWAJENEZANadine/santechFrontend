@@ -18,7 +18,9 @@ const Contact = () => {
         >
           <div className="text-white align-items-center contact-container-content">
             <div className="mb-5 ">
-              <h1 className="text-center">Get in Touch!</h1>
+              <h1 className="text-center"  data-aos="fade-up-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">Get in Touch!</h1>
             </div>
           </div>
         </div>
@@ -26,7 +28,7 @@ const Contact = () => {
           <section className="contact-card-whole-part-inside">
             <div className="container">
               <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
-                <div className="col">
+                <div className="col" >
                   <h1>Get a quote</h1>
 
                   <p>

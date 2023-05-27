@@ -1,9 +1,11 @@
 [
   {
-      "title": "Our favorite Photo from around",
-      "image": ["https://pbs.twimg.com/media/Fwf47fpXoAI-Uc1?format=jpg&name=360x360"],
-      "posted_date": "10/August 2023",
-      "message": "15"
+      "title": ["Explore further collaborations","Rwandan Young Innovators contributing to the 4th industrial revolution"], 
+      "detail":"Rwandan Young Innovators contributing to the 4th industrial revolution where IoT is leading the World industrial sector SAN Tech Ltd brought it's contribution through EVS production, we are really grateful that the Nation is supporting youth.",
+      "image": ["https://pbs.twimg.com/media/Fwf47fpXoAI-Uc1?format=jpg&name=360x360","https://pbs.twimg.com/media/E4YyW7TWQAMhan3?format=jpg&name=medium"],
+      "posted_time": "9:05 AM",
+      "posted_date": "Jun 21, 2021"
+      
       
      
       
@@ -11,41 +13,50 @@
       
   },
   {
-      "title": "Events",
-      "image": ["https://pbs.twimg.com/media/Ft_kVHzXsAM68MI?format=jpg&name=900x900"],
-      "posted_date": "3/May 2023",
-      "message": "15"
+      "title": ["Let's again thanks our  Judges for a great job","Rwandan Young Innovators contributing to the 4th industrial revolution"], 
+      "detail":"SAN TECH HUB :Let's again thanks our  Judges for a great job they have done for monitoring all participants projects, especially, to our Alumni who are taking their courses and graduating from the UR and IPRC, Thank you for your commitment and supporting next generation engineers",
+      "image": ["https://pbs.twimg.com/media/Ft_kVHzXsAM68MI?format=jpg&name=900x900","https://pbs.twimg.com/media/FOJBoVzXwAEkjzK?format=jpg&name=small"],
+      "posted_time": "15",
+      "posted_date": "Jun 21, 2021"
+      
       
       
   },
   {
-      "title": "Inspiration",
-      "image": ["https://pbs.twimg.com/media/Ft_kVH0X0AcoCSp?format=jpg&name=900x900"],
-      "posted_date": "11/August 2023",
-      "message": "15"
+      "title": ["Explore further collaborations","Rwandan Young Innovators contributing to the 4th industrial revolution"], 
+      "detail":"Rwandan Young Innovators contributing to the 4th industrial revolution where IoT is leading the World industrial sector SAN Tech Ltd brought it's contribution through EVS production, we are really grateful that the Nation is supporting youth.",
+      "image": ["https://pbs.twimg.com/media/Ft_kVH0X0AcoCSp?format=jpg&name=900x900","https://pbs.twimg.com/media/FLQWGi_XMAAmNhV?format=jpg&name=small"],
+      "posted_time": "15",
+      "posted_date": "Jun 21, 2021"
+      
+  },
+  {
+      "title": ["Explore further collaborations","Rwandan Young Innovators contributing to the 4th industrial revolution"], 
+      "detail":"Rwandan Young Innovators contributing to the 4th industrial revolution where IoT is leading the World industrial sector SAN Tech Ltd brought it's contribution through EVS production, we are really grateful that the Nation is supporting youth.",
+      "image": ["https://pbs.twimg.com/media/Ft_eOG_XsAAh2Tb?format=jpg&name=medium","https://pbs.twimg.com/media/FFBaDz3XMAYSEDk?format=jpg&name=small"],
+      "posted_time": "15",
+      "posted_date": "Jun 21, 2021"
+      
     
   },
   {
-      "title": "Technology",
-      "image": ["https://pbs.twimg.com/media/Ft_eOG_XsAAh2Tb?format=jpg&name=medium"],
-      "posted_date": "1/April 2023",
-      "message": "15"
-    
-  },
-  {
-      "title": "All you need to know",
-      "image": ["https://pbs.twimg.com/media/Ft_eeTBXwAI63G8?format=jpg&name=900x900"],
-      "posted_date": "10/January 2023",
-      "message": "15"
+      "title": ["Explore further collaborations","Rwandan Young Innovators contributing to the 4th industrial revolution"], 
+      "detail":"Rwandan Young Innovators contributing to the 4th industrial revolution where IoT is leading the World industrial sector SAN Tech Ltd brought it's contribution through EVS production, we are really grateful that the Nation is supporting youth.",
+      "image": ["https://pbs.twimg.com/media/Ft_eeTBXwAI63G8?format=jpg&name=900x900","https://pbs.twimg.com/media/FCTbsadXIBAgFLv?format=jpg&name=medium"],
+      "posted_time": "15",
+      "posted_date": "Jun 21, 2021"
+      
        
        
 
   },
   {
-      "title": "Our interest",
-      "image": ["https://pbs.twimg.com/media/Ft_eg2-XoAMiGZ8?format=jpg&name=900x900"],
-      "posted_date": "10/August",
-      "message": "15"
+      "title": ["Explore further collaborations","Rwandan Young Innovators contributing to the 4th industrial revolution"], 
+      "detail":"Rwandan Young Innovators contributing to the 4th industrial revolution where IoT is leading the World industrial sector SAN Tech Ltd brought it's contribution through EVS production, we are really grateful that the Nation is supporting youth.",
+      "image": ["https://pbs.twimg.com/media/Ft_eg2-XoAMiGZ8?format=jpg&name=900x900","https://pbs.twimg.com/media/E4YyW7TWQAMhan3?format=jpg&name=medium"],
+      "posted_time": "15",
+      "posted_date": "Jun 21, 2021"
+      
        
   }
 

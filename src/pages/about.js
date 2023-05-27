@@ -15,11 +15,15 @@ const About = () => {
       <div className="about-container-page">
         <div className="container-fluid about-container">
           <div className="row  row-cols-1 row-sm-cols-2 row-cols-md-2 justify-around text-white align-items-center about-container-content">
-            <div className="col mb-5 ">
+            <div className="col mb-5 "  data-aos="fade-up-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <p className="fs-4">Nice to meet you</p>
               <h1>About our company</h1>
             </div>
-            <div className="col">
+            <div className="col"  data-aos="fade-up-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <p className="fs-4 w-75">
                 Learn more about aour company and the team behind it.
                 
@@ -77,7 +81,9 @@ const About = () => {
         <div className="container">
           <div class="row">
             <div class="col-sm-4 col-md-5">
-              <div class="card">
+              <div class="card" data-aos="fade-up-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <div class="card-body">
                   <img
                     src="https://media.licdn.com/dms/image/C4D03AQEQYBYpvuIxUQ/profile-displayphoto-shrink_800_800/0/1616165515838?e=1689811200&v=beta&t=05iMXwuo5Np3oMA74Sey3zuXj6sLOc0Z1BFxwM8RM2I"
@@ -95,7 +101,9 @@ const About = () => {
               </div>
             </div>
             <div class="col-sm-4 col-md-5">
-              <div class="card">
+              <div class="card"  data-aos="fade-up-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <div class="card-body">
                   <img src={claud} style={{ height: "44vh" }} />
                   <h3 class="card-title mb-3">Claudine Niyonzima</h3>
