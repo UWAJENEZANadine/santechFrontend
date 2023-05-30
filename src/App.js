@@ -1,21 +1,20 @@
 import React from "react";
-import Header from "./components/header";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
-import Footer from "./components/footer";
-import GoToTop from "./components/GoToTop";
 import About from "./pages/about";
 import Story from "./pages/story";
 import Contact from "./pages/contact";
 import Gallery from "./pages/gallery";
 import Blog from "./pages/TechBlog";
+import Layout from "./components/dashboard/layout";
+import Dashboard from "./components/dashboard/dashboard";
 
 
 function App() {
   return (
     <>
     
-      <Header />
+ 
       
       
       <Routes>
@@ -28,8 +27,16 @@ function App() {
         <Route path="blog" element={<Blog />} />
        
       </Routes>
-      <GoToTop />
-      <Footer />
+      
+
+
+      <Routes>
+          <Route path="/dashboard" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            
+          </Route>
+          
+        </Routes>
     </>
   );
 }

@@ -9,9 +9,11 @@ import { MdForwardToInbox, MdAddIcCall } from "react-icons/md";
 import { BsFacebook } from "react-icons/bs";
 import { FaTwitterSquare, FaInstagram } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
+import PageLayout from "./pageLayout";
 const About = () => {
   return (
     <>
+    <PageLayout>
       <div className="about-container-page">
         <div className="container-fluid about-container">
           <div className="row  row-cols-1 row-sm-cols-2 row-cols-md-2 justify-around text-white align-items-center about-container-content">
@@ -118,6 +120,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </PageLayout>
     </>
   );
 };

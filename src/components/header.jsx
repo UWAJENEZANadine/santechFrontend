@@ -108,16 +108,17 @@ const Header = () => {
             <Navbar.Brand href="">
               <Box sx={{ minWidth: 100 }}>
                 <FormControl fullWidth className="mt-3" >
-                  <InputLabel id="demo-simple-select-label" >Initiatives</InputLabel>
+                  <InputLabel id="demo-simple-select-label" style={{fontSize:"1.5rem" }}>Initiatives</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     label="Initiatives"
                     onChange={handleChange}
+                    style={{fontSize:"1.5rem" }}
                   >
-                    <MenuItem value={10}>SAN TECH HUB</MenuItem>
-                    <MenuItem value={20}>E-vistors system</MenuItem>
-                    <MenuItem value={30}>Annika Technology</MenuItem>
+                    <MenuItem value={10} style={{fontSize:"1.5rem" }}>SAN TECH HUB</MenuItem>
+                    <MenuItem value={20} style={{fontSize:"1.5rem" }}>E-vistors system</MenuItem>
+                    <MenuItem value={30} style={{fontSize:"1.5rem" }}>Annika Technology</MenuItem>
                   </Select>
                 </FormControl>
               </Box>

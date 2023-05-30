@@ -13,6 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import { Link } from "react-router-dom";
+import PageLayout from "./pageLayout";
 
 const Home = () => {
   useEffect(() => {
@@ -36,6 +37,7 @@ const Home = () => {
 
   return (
     <>
+    <PageLayout>
       <section className="homepage-container">
         <Carousel fade className="home-container" data-interval="1000">
           <Carousel.Item
@@ -702,6 +704,7 @@ const Home = () => {
           </Swiper>
         </div>
       </section>
+      </PageLayout>
     </>
   );
 };

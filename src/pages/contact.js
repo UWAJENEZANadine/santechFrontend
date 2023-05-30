@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/contact.css";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdEmail, MdRadio } from "react-icons/md";
@@ -6,11 +6,75 @@ import { ImLocation } from "react-icons/im";
 import { RiFacebookLine } from "react-icons/ri";
 import { RxTwitterLogo } from "react-icons/rx";
 import { IoLogoInstagram } from "react-icons/io";
-
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import PageLayout from "./pageLayout";
+import axios from "axios";
 
 const Contact = () => {
+
+
+  const [fname, setFname] = useState("")
+  const [image, setImage] = useState("")
+
+  const addBlogInfo = async (e) =>{
+    e.preventDefault()
+
+    var formData = new FormData();
+    formData.append("fname", fname);
+    formData.append("photo", image);
+
+    const config = {
+      headers:{
+        "Content-Type":"multipart/form-data"
+      }
+    }
+    const res = await axios.post("http://localhost:4040/registerblog", formData, config)
+    console.log(res)
+  }
+
+
+  // const [name, setName] = useState("");
+  // const [age, setAge] = useState(0);
+  // const [country, setCountry] = useState("");
+  // const [position, setPosition] = useState("");
+  // const [wage, setWage] = useState(0);
+
+  // const [userList, setUserList] = useState([]);
+
+  // const addUser = () => {
+  //   axios
+  //     .post("http://localhost:4040/create", {
+  //       name: name,
+  //       age: age,
+  //       country: country,
+  //       position: position,
+  //       wage: wage,
+  //     })
+  //     .then(() => {
+  //       setUserList([
+  //         ...userList,
+  //         {
+  //           name: name,
+  //           age: age,
+  //           country: country,
+  //           position: position,
+  //           wage: wage,
+  //         },
+  //       ]);
+  //     });
+  // };
+
+  // const getUser = () => {
+  //   axios.get("http://localhost:4040/users").then((response) => {
+  //     setUserList(response.data);
+  //   });
+  // };
+
   return (
     <>
+    <PageLayout>
       <div className="contact-container">
         <div
           className="container-fluid contact-container-head"
@@ -18,9 +82,14 @@ const Contact = () => {
         >
           <div className="text-white align-items-center contact-container-content">
             <div className="mb-5 ">
-              <h1 className="text-center"  data-aos="fade-up-right"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000">Get in Touch!</h1>
+              <h1
+                className="text-center"
+                data-aos="fade-up-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                Get in Touch!
+              </h1>
             </div>
           </div>
         </div>
@@ -28,7 +97,7 @@ const Contact = () => {
           <section className="contact-card-whole-part-inside">
             <div className="container">
               <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
-                <div className="col" >
+                <div className="col">
                   <h1>Get a quote</h1>
 
                   <p>
@@ -50,14 +119,23 @@ const Contact = () => {
                     <MdEmail style={{ color: "#a78bfa" }} />
                     <span> info@santechrwanda.com</span>
                   </h4>
-                 
+
                   <h4>
                     <ImLocation style={{ color: "#a78bfa" }} />
                     <span> Street KN 89 St, Kigali-Rwanda</span>
                   </h4>
                   <h4>
                     <MdRadio style={{ color: "#a78bfa" }} />
-                    <span> <a href="https://zeno.fm/san-tech/" target="_blank" style={{textDecoration:"none", color:"#03037f"}}>https://zeno.fm/san-tech/</a> </span>
+                    <span>
+                      {" "}
+                      <a
+                        href="https://zeno.fm/san-tech/"
+                        target="_blank"
+                        style={{ textDecoration: "none", color: "#03037f" }}
+                      >
+                        https://zeno.fm/san-tech/
+                      </a>{" "}
+                    </span>
                   </h4>
                   <div className="contact-footer-icon ">
                     <RiFacebookLine
@@ -101,14 +179,19 @@ const Contact = () => {
                         type="text"
                         id="formControlLg"
                         class="form-control form-control-lg p-3"
-                        style={{backgroundColor:"#f9fafb"}}
+                        style={{ backgroundColor: "#f9fafb" }}
                       />
                     </div>
                     <div class="form-outline mb-5">
                       <label class="form-label" for="typeEmail">
                         Your Email
                       </label>
-                      <input type="email" id="typeEmail" class="form-control p-3" style={{backgroundColor:"#f9fafb"}}/>
+                      <input
+                        type="email"
+                        id="typeEmail"
+                        class="form-control p-3"
+                        style={{ backgroundColor: "#f9fafb" }}
+                      />
                     </div>
                     <div class="form-outline mb-5">
                       <label class="form-label" for="textAreaExample">
@@ -118,10 +201,14 @@ const Contact = () => {
                         class="form-control"
                         id="textAreaExample"
                         rows="7"
-                        style={{backgroundColor:"#f9fafb"}}
+                        style={{ backgroundColor: "#f9fafb" }}
                       ></textarea>
                     </div>
-                    <button type="button" class="btn btn-primary" style={{fontSize:"1.5rem"}}>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      style={{ fontSize: "1.5rem" }}
+                    >
                       Send Message
                     </button>
                   </div>
@@ -131,6 +218,75 @@ const Contact = () => {
           </section>
         </div>
       </div>
+
+      {/* <div className="data-input">
+        <div className="information">
+          <input
+            type="text"
+            placeholder="name"
+            onChange={(event) => {
+              setName(event.target.value);
+            }}
+          />
+          <input
+            type="number"
+            placeholder="age"
+            onChange={(event) => {
+              setAge(event.target.value);
+            }}
+          />
+          <input
+            type="text"
+            placeholder="country"
+            onChange={(event) => {
+              setCountry(event.target.value);
+            }}
+          />
+          <input
+            type="text"
+            placeholder="position"
+            onChange={(event) => {
+              setPosition(event.target.value);
+            }}
+          />
+          <input
+            type="number"
+            placeholder="wage"
+            onChange={(event) => {
+              setWage(event.target.value);
+            }}
+          />
+          <button className="information-button" onClick={addUser}>
+            Submit
+          </button>
+          <button className="information-button" onClick={getUser}>
+            Show user
+          </button>
+
+          {userList.map((val, key) => {
+            return <div>{val.name}</div>;
+          })}
+        </div>
+      </div> */}
+
+      <div className="container mt-3 py-5">
+        <Form className="w-50">
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>User name</Form.Label>
+            <Form.Control type="text" placeholder="Enter your name" name='fname'  onChange={(event) =>{setFname(event.target.value)}}/>
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Select your image</Form.Label>
+            <Form.Control type="file" placeholder="file" name='photo' onChange={(event) =>{setImage(event.target.files[0])}} />
+          </Form.Group>
+
+          <Button variant="primary" type="submit" style={{width:"40%"}} onClick={addBlogInfo}>
+            Submit
+          </Button>
+        </Form>
+      </div>
+      </PageLayout>
     </>
   );
 };

@@ -3,9 +3,12 @@ import "../css/techBlog.css";
 import blogs from "../assets/constants/blog.json";
 import BlogCard from "../components/blogCard";
 import { Link } from "react-router-dom"
+import PageLayout from "./pageLayout";
 const Blog = () => {
   return (
     <>
+    <PageLayout>
+
       <div className="Tech-container">
         <div
           className="container-fluid Tech-container-head"
@@ -42,6 +45,7 @@ const Blog = () => {
           <BlogCard data={data} />
         ))}
       </div>
+      </PageLayout>
     </>
   );
 };
