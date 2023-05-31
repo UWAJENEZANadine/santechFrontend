@@ -4,63 +4,79 @@
   padding: 0;
   box-sizing: border-box;
 }
-.Tech-container{
+.Tech-container {
   min-height: 90vh;
   background-color: #f3f4f6;
- 
-
 }
-.Tech-container-head{
-  background-image: linear-gradient(90deg, #000000a9, #00000060), 
-  url("https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+.Tech-container-head {
+  background-image: linear-gradient(90deg, #000000a9, #00000060),
+    url("https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-.Tech-container-content .mb-5 h1{
+.Tech-container-content .mb-5 h1 {
   font-size: 4rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-weight: 700;
   line-height: 5.5em;
   padding-top: 5rem;
 }
-.header-update{
+.header-update {
   padding: 2rem 10rem 0rem 40rem;
 }
-.header-update div h1{ 
+.header-update div h1 {
   padding: 2rem;
-
 }
-.active-blog{
+.active-blog {
   text-decoration: none;
   color: #014b7c;
   font-size: 1.8rem;
   border: 2px solid #014b7c;
   padding: 1rem;
   border-radius: 2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
-.active-blog:hover{
+.active-blog:hover {
   background-color: #014b7c;
   transition: 1s all;
   color: #fff;
-
 }
-.active-blog:active{
+.active-blog:active {
   background-color: #014b7c;
   color: #fff;
 }
-.active-blog-all{
+.active-blog-all {
   background-color: #014b7c;
   color: white;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
-@media only screen and (max-width: 576px){
-  
-  .header-update{
+@media only screen and (max-width: 576px) {
+  .header-update {
     padding: 2rem 10rem 0rem 20rem;
   }
 }
 
-
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* DASH BLOG */
+.form-container-part{
+  background-color: #f3f4f6;
+  height: 100vh;
+}
+.form-container {
+  height: 70vh;
+}
+.form-container h1 {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  line-height: 10vh;
+  font-weight: 700;
+}
+.form-party {
+  margin: auto;
+  width: 50%;
+}
+.form-container h1 span{
+  color: #014b7c;
+  font-weight: 700;
+}

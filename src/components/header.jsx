@@ -30,7 +30,7 @@ const Header = () => {
     <div className="Header-container">
       <div className="Top-part d-flex justify-content-between align-items-center">
         <div className="d-sm-none d-md-none d-lg-flex">
-          <h4 className="" style={{color:"white"}}>
+          <h4 className="" style={{ color: "white" }}>
             <img src={business} /> Smart Applications and Networking Technology
           </h4>
         </div>
@@ -62,17 +62,11 @@ const Header = () => {
       <div className="Middle-part d-flex justify-content-between align-items-center">
         <div className="">
           <h1 className="Santech-text-logo">
-            <span className="Santech-text-span-1"
-            >
-              SAN
-            </span>
+            <span className="Santech-text-span-1">SAN</span>
             <span className="Santech-text-span2">TECH</span>
           </h1>
           <div className="Middle-part-line-text"></div>
-          <h5
-            className="text-uppercase Santech-text-span3  mt-3"
-            
-          >
+          <h5 className="text-uppercase Santech-text-span3  mt-3">
             <i>Making your Ideas happen!</i>
           </h5>
         </div>
@@ -107,18 +101,29 @@ const Header = () => {
           <div className="col-3">
             <Navbar.Brand href="">
               <Box sx={{ minWidth: 100 }}>
-                <FormControl fullWidth className="mt-3" >
-                  <InputLabel id="demo-simple-select-label" style={{fontSize:"1.5rem" }}>Initiatives</InputLabel>
+                <FormControl fullWidth className="mt-3">
+                  <InputLabel
+                    id="demo-simple-select-label"
+                    style={{ fontSize: "1.5rem" }}
+                  >
+                    Initiatives
+                  </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     label="Initiatives"
                     onChange={handleChange}
-                    style={{fontSize:"1.5rem" }}
+                    style={{ fontSize: "1.5rem" }}
                   >
-                    <MenuItem value={10} style={{fontSize:"1.5rem" }}>SAN TECH HUB</MenuItem>
-                    <MenuItem value={20} style={{fontSize:"1.5rem" }}>E-vistors system</MenuItem>
-                    <MenuItem value={30} style={{fontSize:"1.5rem" }}>Annika Technology</MenuItem>
+                    <MenuItem value={10} style={{ fontSize: "1.5rem" }}>
+                      SAN TECH HUB
+                    </MenuItem>
+                    <MenuItem value={20} style={{ fontSize: "1.5rem" }}>
+                      E-vistors system
+                    </MenuItem>
+                    <MenuItem value={30} style={{ fontSize: "1.5rem" }}>
+                      Annika Technology
+                    </MenuItem>
                   </Select>
                 </FormControl>
               </Box>
@@ -128,27 +133,51 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="col-9">
               <Nav className="">
-                <Nav.Link className="last-link  last-link-home text-center"
+                <Nav.Link
+                  className="last-link  last-link-home text-center"
                   href="home"
-                  style={{ fontSize: "1.5rem",color:"#3b82f6", fontWeight:"600"}}
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "#3b82f6",
+                    fontWeight: "600",
+                  }}
                 >
                   HOME
                 </Nav.Link>
-                <Nav.Link className="last-link"
+                <Nav.Link
+                  className="last-link"
                   href="about"
-                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6", fontWeight:"600" }}
+                  style={{
+                    fontSize: "1.5rem",
+                    padding: "1rem",
+                    color: "#3b82f6",
+                    fontWeight: "600",
+                  }}
                 >
                   ABOUT
                 </Nav.Link>
-                <Nav.Link className="last-link"
+
+                <Nav.Link
+                  className="last-link"
                   href="story"
-                  style={{ fontSize: "1.5rem" , padding:"1rem",color:"#3b82f6", fontWeight:"600"}}
+                  style={{
+                    fontSize: "1.5rem",
+                    padding: "1rem",
+                    color: "#3b82f6",
+                    fontWeight: "600",
+                  }}
                 >
                   SUCCESS STORIES
                 </Nav.Link>
-                <Nav.Link className="last-link"
+                <Nav.Link
+                  className="last-link"
                   href="contact"
-                  style={{ fontSize: "1.5rem",  padding:"1rem",color:"#3b82f6", fontWeight:"600" }}
+                  style={{
+                    fontSize: "1.5rem",
+                    padding: "1rem",
+                    color: "#3b82f6",
+                    fontWeight: "600",
+                  }}
                 >
                   CONTACT US
                 </Nav.Link>
@@ -156,11 +185,17 @@ const Header = () => {
             </div>
             <div className="col">
               <Nav>
-                <Nav.Link className="last-link last-link-radio "
-                  href="https://zeno.fm/radio/san-tech/" target="__blank"
-                  style={{fontSize: "1.5rem",color:"#3b82f6", fontWeight:"600" }}
+                <Nav.Link
+                  className="last-link last-link-radio "
+                  href="https://zeno.fm/radio/san-tech/"
+                  target="__blank"
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "#3b82f6",
+                    fontWeight: "600",
+                  }}
                 >
-                  <MdOutlineRadio style={{marginTop:"-6px"}}/> SANTECH RADIO
+                  <MdOutlineRadio style={{ marginTop: "-6px" }} /> SANTECH RADIO
                 </Nav.Link>
               </Nav>
             </div>
