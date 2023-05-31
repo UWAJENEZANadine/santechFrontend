@@ -1,30 +1,62 @@
 import React from "react";
-import { FcBullish } from "react-icons/fc";
-import { DASHBOARD_SIDEBAR_LINKS } from "./constants/navigation";
-import { Link } from "react-router-dom";
+import "../../css/LayoutDash.css";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo-removebg.png"
+import { MdOutlineDashboard,MdOutlineIndeterminateCheckBox } from "react-icons/md"
+import { SiMicrodotblog } from "react-icons/si"
+import { FiSettings } from "react-icons/fi"
+import { TfiComments } from "react-icons/tfi"
+const DashSideBar = () => {
+  return (
+    <>
+      <input type="checkbox" id="menu-toggle" />
+      <div className="sidebar">
+        <div className="side-header">
+          <h3>
+            <img src={logo}  style={{width:"100%", height:"10vh"}}/>
+          </h3>
+        </div>
 
-const linkClass =
-  "flex items-center gap-2 font-light px-3 py-4 hover:bg-blue-800 hover:no-underline active:bg-blue-500 rounded-sm text-base";
-export default function DashSideBar() {
-  return (
-    <div className="flex flex-col bg-gray-900 w-60 p-3 text-white">
-      <div className="flex items-center gap-2 px-1 py-3">
-        <FcBullish fontSize={24} />
-        <span className="text-blue-400">Profile</span>
+        <div className="side-content">
+          <div className="side-menu">
+            <ul>
+              <li>
+                <NavLink to="/dashboard" className="active side-menu-link">
+                  <span> < MdOutlineDashboard /> <small>Dashboard</small></span>
+                 
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="blog" className="side-menu-link">
+                <span> <SiMicrodotblog/>  <small>Blogs</small></span>
+                 
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="technology" className="side-menu-link">
+                <span>< MdOutlineIndeterminateCheckBox/>  <small>technology</small></span>
+                
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="testmonials" className="side-menu-link">
+                <span><TfiComments /> <small>Testmonials</small></span>
+               
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="settings" className="side-menu-link">
+                <span> <FiSettings /> <small>Settings</small></span>
+                 
+                </NavLink>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className="flex-1">
-        {DASHBOARD_SIDEBAR_LINKS.map((item) => (
-          <SidebarLink key={item.key} item={item} />
-        ))}
-      </div>
-    </div>
+    </>
   );
-}
-function SidebarLink({ item }) {
-  return (
-    <Link to={item.path} className={linkClass}>
-      <span className="text-xl">{item.icon}</span>
-      {item.label}
-    </Link>
-  );
-}
+};
+
+export default DashSideBar;

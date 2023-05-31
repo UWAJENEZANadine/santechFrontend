@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <div className="bg-gray-100 flex flex-row h-screen w-screen overflow-hidden">
+      <div>
         <DashSideBar />
         <div className="">
           <DashHeader />

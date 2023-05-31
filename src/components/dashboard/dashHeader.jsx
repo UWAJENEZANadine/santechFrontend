@@ -1,27 +1,46 @@
 import React from "react";
+import "../../css/LayoutDash.css";
 
 import { HiOutlineSearch, HiOutlineChat, HiOutlineBell } from "react-icons/hi";
 const DashHeader = () => {
   return (
-    <div className="grid grid-cols-3 items-center bg-gray-700 h-16 px-4 w-screen">
-      <div className="w-32">
-       
-      </div>
-      <div className="relative">
-        <HiOutlineSearch
-          fontSize={20}
-          className="text-gray-400 absolute top-1/2 -translate-y-1/2 left-3"
-        />
-        <input
-          type="text"
-          placeholder="search..."
-          className="text-sm focus:outline-none active:outline-none h-10 w-[24rem] border border-blue-300 rounded-sm px-4 pl-11 pr-4"
-        />
-      </div>
-      <div className="text-white flex items-center gap-4 ml-48">
-        <HiOutlineChat fontSize={24} />
-        <HiOutlineBell fontSize={24} />
-      </div>
+    <div className="main-content">
+      <header>
+        <div className="header-content">
+          <label for="menu-toggle">
+            <span className="las la-bars"></span>
+          </label>
+
+          <div className="header-menu">
+            <label for="">
+              <span className="las la-search"></span>
+            </label>
+
+            <div className="notify-icon">
+              <span className="las la-envelope"></span>
+              <span className="notify">4</span>
+            </div>
+
+            <div className="notify-icon">
+              <span className="las la-bell"></span>
+              <span className="notify">3</span>
+            </div>
+
+            <div className="user">
+              <div className="bg-img"></div>
+
+              <span className="las la-power-off"></span>
+              <span>Logout</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div className="page-header">
+          <h1>Overview</h1>
+        </div>
+      </main>
     </div>
   );
 };
