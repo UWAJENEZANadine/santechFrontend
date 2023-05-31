@@ -27,7 +27,7 @@ const DashSideBar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="blog" className="side-menu-link">
+                <NavLink to="dashblog" className="side-menu-link">
                 <span> <SiMicrodotblog/>  <small>Blogs</small></span>
                  
                 </NavLink>

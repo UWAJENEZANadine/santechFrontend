@@ -36,12 +36,12 @@ const Header = () => {
         </div>
         <div className="Top-part-link-container d-flex justify-content-between align-items-center">
           <h5>
-            <NavLink className="Top-part-link" to="blog">
+            <NavLink className="Top-part-link" to="/blog">
               Tech blog
             </NavLink>
           </h5>
           <h5>
-            <NavLink className="Top-part-link" to="gallery">
+            <NavLink className="Top-part-link" to="/gallery">
               Media
             </NavLink>
           </h5>
