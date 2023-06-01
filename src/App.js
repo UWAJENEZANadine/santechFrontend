@@ -24,7 +24,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="story" element={<Story />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="dashSignIn" element={<SignIn />} />
+        <Route path="SignIn" element={<SignIn />} />
       </Routes>
 
       <Routes>
