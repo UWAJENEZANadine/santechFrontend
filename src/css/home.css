@@ -24,7 +24,31 @@
   opacity: 0.8;
   font-weight: 900;
 }
+.carousel-card-container{
+  background-color: white;
+  height: 65vh;
+  width: 40%;
+  position: absolute;
+  top: -410%;
+  left: 70%;
+  opacity: .7;
+  border: 8px solid #0697f8;
+  border-radius: 7px;
+  padding: 2rem;
 
+}
+.carousel-card-container h1{
+  text-transform: uppercase;
+  color: #03037f;
+  margin-bottom: 3rem;
+
+}
+.carousel-card-container p{
+  color: #0000;
+  line-height: 5vh;
+  font-size: 1.7rem;
+
+}
 @media only screen and (max-width: 600px) and (min-width: 400px){
   .carousel-content{
     margin-left: 10rem;
@@ -97,15 +121,17 @@
 }
 
 .first-part-content {
-  position: relative;
+  /* position: relative;
   margin-top: -1.5rem;
-  z-index: 1;
-  background-color: #03037f;
+  z-index: 1; */
+  background-image: linear-gradient(to right bottom, #014b7c31, rgba(70, 41, 238, 0.432)), url("https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
+  background-size: cover;
   border-radius: 0.8rem;
   color: white;
   padding: 2rem;
   border: 2px solid #fff;
   margin-bottom: 5rem;
+  
 }
 .num {
   font-size: 4rem;
