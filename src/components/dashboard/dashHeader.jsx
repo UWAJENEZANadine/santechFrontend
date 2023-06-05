@@ -3,6 +3,7 @@ import "../../css/LayoutDash.css";
 
 import { HiOutlineSearch, HiOutlineChat, HiOutlineBell } from "react-icons/hi";
 const DashHeader = () => {
+
   return (
     <div className="main-content">
       <header>
@@ -25,22 +26,10 @@ const DashHeader = () => {
               <span className="las la-bell"></span>
               <span className="notify">3</span>
             </div>
-
-            <div className="user">
-              <div className="bg-img"></div>
-
-              <span className="las la-power-off"></span>
-              <span>Logout</span>
-            </div>
           </div>
         </div>
       </header>
-
-      <main>
-        <div className="page-header">
-          <h1>Overview</h1>
-        </div>
-      </main>
+      
     </div>
   );
 };
