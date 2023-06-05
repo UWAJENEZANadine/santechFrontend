@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo-removebg.png"
 import { MdOutlineDashboard,MdOutlineIndeterminateCheckBox } from "react-icons/md"
 import { SiMicrodotblog } from "react-icons/si"
-import { FiSettings } from "react-icons/fi"
+import { FiSettings,FiLogOut } from "react-icons/fi"
 import { TfiComments } from "react-icons/tfi"
 const DashSideBar = () => {
   return (
@@ -16,6 +16,7 @@ const DashSideBar = () => {
             <img src={logo}  style={{width:"100%", height:"10vh"}}/>
           </h3>
         </div>
+        <hr style={{color:"white", marginBottom:"3rem"}}/>
 
         <div className="side-content">
           <div className="side-menu">
@@ -44,9 +45,16 @@ const DashSideBar = () => {
                
                 </NavLink>
               </li>
+              <hr style={{color:"white", marginBottom:"3rem"}}/>
               <li>
                 <NavLink to="settings" className="side-menu-link">
                 <span> <FiSettings /> <small>Settings</small></span>
+                 
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="settings" className="side-menu-link">
+                <span> <FiLogOut /> <small>Logout</small></span>
                  
                 </NavLink>
               </li>

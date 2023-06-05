@@ -28,13 +28,11 @@
   bottom: 0;
   top: 0;
   z-index: 100;
-  background: var(--color-dark);
+  background: #041737;
   transition: left 300ms;
 }
 
 .side-header {
-  box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
-  background: var(--main-color);
   height: 100px;
   display: flex;
   justify-content: center;
@@ -56,7 +54,7 @@ side-head span {
   font-size: 1.8rem;
 }
 .side-menu ul li {
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 .side-menu-link {
   color: white;
@@ -155,9 +153,9 @@ header {
   font-size: 0.8rem;
 }
 
-main {
+/* main {
   margin-top: 60px;
-}
+} */
 
 .page-header {
   padding: 1.3rem 1rem;
@@ -177,17 +175,18 @@ main {
 
 .analytics {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
-  margin-top: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
 }
 
-.card {
-  box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 10%);
+.card1 {
+  box-shadow: 0px 5px 5px 2px rgb(0 0 0 / 10%);
   background: #fff;
-  padding: 1rem;
+  padding: 5rem;
   border-radius: 3px;
+
 }
 
 .card-head {
@@ -198,8 +197,8 @@ main {
 
 .card-head h2 {
   color: #333;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 .card-head span {
@@ -215,14 +214,14 @@ main {
 
 .card-indicator {
   margin: 0.7rem 0rem;
-  height: 10px;
+  height: 15px;
   border-radius: 4px;
   background: #e9edf2;
   overflow: hidden;
 }
 
 .indicator {
-  height: 10px;
+  height: 15px;
   border-radius: 4px;
 }
 
@@ -234,12 +233,8 @@ main {
   background: #11a8c3;
 }
 
-.indicator.three {
-  background: #f6d433;
-}
-
 .indicator.four {
-  background: #f25656;
+  background: #014b7c;
 }
 
 .records {
@@ -407,6 +402,7 @@ table tbody tr {
   .main-content {
     margin-left: 0;
     width: 100%;
+ 
   }
 
   #menu-toggle:checked ~ .sidebar {
@@ -434,16 +430,8 @@ table tbody tr {
     left: 0px;
   }
 }
-.chart-body{
-  background-color: #f4f4f5;
-  padding-top: 1rem;
-  min-height: 50vh;
+.CustomerReview{
+  width: 40%;
+  
 }
 
-.chart-container {
-  width: 35%;
-  background-color: #ffff;
-  border-radius: 9px;
-  margin-left: 1rem;
- 
-}
