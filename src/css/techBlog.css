@@ -59,24 +59,77 @@
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* DASH BLOG */
-.form-container-part{
-  background-color: #f3f4f6;
+.add {
+  margin-top: 90px;
+  display: flex;
+  gap: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.content-blog {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-blog {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input {
+  padding: 10px;
+  border: 1px solid lightgrey;
+}
+.editor-container {
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid lightgrey;
+}
+.editor {
   height: 100vh;
+  border: none;
 }
-.form-container {
-  height: 70vh;
+.item-blog {
+  border: 1px solid lightgrey;
+  padding: 20px;
+  flex-direction: 1;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* color: #5555; */
 }
-.form-container h1 {
-  text-align: center;
-  letter-spacing: 0.1rem;
-  line-height: 10vh;
-  font-weight: 700;
+.item-blog h1 {
+  font-size: 20px;
 }
-.form-party {
-  margin: auto;
-  width: 50%;
+.item-blog .file {
+  text-decoration: underline;
 }
-.form-container h1 span{
-  color: #014b7c;
-  font-weight: 700;
+.file {
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons:first-child {
+  cursor: pointer;
+  color: teal;
+
+  padding: 3px 5px;
+}
+.buttons:last-child {
+  cursor: pointer;
+  color: white;
+
+  padding: 3px 5px;
+}
+.blog-radio{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: teal;
+  text-decoration: none;
 }
