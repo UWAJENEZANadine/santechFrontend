@@ -16,7 +16,10 @@ const DashSideBar = () => {
             <img src={logo}  style={{width:"100%", height:"10vh"}}/>
           </h3>
         </div>
+        <div style={{padding:"0rem 2rem 0rem 2rem"}}>
         <hr style={{color:"white", marginBottom:"3rem"}}/>
+        </div>
+        
 
         <div className="side-content">
           <div className="side-menu">
