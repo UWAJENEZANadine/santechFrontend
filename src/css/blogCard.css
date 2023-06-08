@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300&family=Josefin+Sans:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/clash-display");
 .blog-card-page{
- padding: 0rem 4rem 4rem 4rem;
+ padding: 3rem 3rem 5rem 3rem;
 }
 .blog-card-container{
   position: relative;
   height:40vh;
-  width:55%;
+  width:70%;
   display: flex;
   color: black;
   box-shadow: 0px 1px .2rem grey;
@@ -18,10 +20,14 @@
   height: 40vh;
   overflow: hidden;
   background-color: black;
+  object-fit: cover;
+  margin-left: -3rem;
+
 }
 .image img{
   height: 100%;
   width: 100%;
+  
 }
 .image h1{
   position: absolute;
@@ -35,43 +41,42 @@
 }
 .card-data-detail{
   padding: 2rem;
-  width: 65%;
+  width: 60%;
 }
 .card-data-detail h1{
   color: #014b7c;
-  margin-top: 2rem;
-  font-size: 2rem;
+  /* margin-top: 1rem; */
+  font-size: 1.5rem;
 }
 .card-data-detail h2{
   color: #014b7c;
-  margin-top: 2rem;
-  font-size: 2.3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
 
 }
-.btn-inline {
+.card-data-detail p{
+  color: #555;
+  font-family: "Montserrat", serif;
+}
+.button-blog {
   border: none;
   color: #03037f;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
-  font-weight: 700;
+  font-weight: 600;
 }
-.btn-inline span {
+.button-blog span {
   margin-left: 3px;
   transition: all 0.2s;
 }
-.btn-inline:hover span {
+.button-blog:hover span {
   margin-left: 8px;
 }
 
-.btn-inline:hover {
+.button-blog:hover {
   color: #333;
-  border-bottom: 1px solid #333;
-}
-
-.btn-inline:focus {
-  outline: none;
-  animation: pulsate 1s infinite;
+  /* border-bottom: 1px solid #333; */
 }

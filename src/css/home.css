@@ -167,6 +167,13 @@
 }
 .latest-news-container {
   font-size: 1.5rem;
+  
+ 
+}
+.home-card-blog{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
 }
 .latest-news-container-header {
   font-size: 4rem;
