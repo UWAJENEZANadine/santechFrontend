@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "../css/home.css";
 import Carousel from "react-bootstrap/Carousel";
 import { FcAbout, FcElectricity, FcRadarPlot } from "react-icons/fc";
@@ -14,8 +15,23 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import { Link } from "react-router-dom";
 import PageLayout from "./pageLayout";
+import HomeCardBlog from "../components/HomeCardBlog";
 
 const Home = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("http://localhost:4040/post");
+        setPosts(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchData();
+  }, []);
+
   useEffect(() => {
     let valueDisplays = document.querySelectorAll(".num");
     let interval = 6000;
@@ -50,14 +66,18 @@ const Home = () => {
                 </h3>
                 <div className="carousel-card-container">
                   <h1 className="text-center">Project</h1>
-                  <p style={{ color: "black", marginBottom:"7rem" }}>
+                  <p style={{ color: "black", marginBottom: "7rem" }}>
                     No body will remain the Identity card on entrance mostly
                     visitors, by use of E-Visitors System @NidaRwanda , It{" "}
                   </p>
                   <Button
                     variant="primary"
                     className="fs-5"
-                    style={{ width: "50%", padding: ".9rem",borderRadius:"1px"  }}
+                    style={{
+                      width: "50%",
+                      padding: ".9rem",
+                      borderRadius: "1px",
+                    }}
                   >
                     show more &rarr;
                   </Button>
@@ -79,14 +99,18 @@ const Home = () => {
                 </h3>
                 <div className="carousel-card-container">
                   <h1>Binyuza mwikoranabuhanga</h1>
-                  <p style={{ color: "black", marginBottom:"7rem" }}>
+                  <p style={{ color: "black", marginBottom: "7rem" }}>
                     Binyuza mwikoranabuhanga twize<a href="">@urcst</a> Ubu
                     Itsinda ry'urubyiruko( SAN TECH) ryakoze ikoranabuhanga
                   </p>
                   <Button
                     variant="primary"
                     className="fs-5"
-                    style={{ width: "50%", padding: ".9rem",borderRadius:"1px"  }}
+                    style={{
+                      width: "50%",
+                      padding: ".9rem",
+                      borderRadius: "1px",
+                    }}
                   >
                     show more &rarr;
                   </Button>
@@ -108,14 +132,18 @@ const Home = () => {
                 </h3>
                 <div className="carousel-card-container">
                   <h1>In SAN TECH today</h1>
-                  <p style={{ color: "black", marginBottom:"7rem" }}>
+                  <p style={{ color: "black", marginBottom: "7rem" }}>
                     In SAN TECH today , was a great moment with the Global
                     Engagement Institute and delegation of Pepperdine Graziadio
                   </p>
                   <Button
                     variant="primary"
                     className="fs-5"
-                    style={{ width: "50%", padding: ".9rem",borderRadius:"1px"  }}
+                    style={{
+                      width: "50%",
+                      padding: ".9rem",
+                      borderRadius: "1px",
+                    }}
                   >
                     show more &rarr;
                   </Button>
@@ -137,14 +165,18 @@ const Home = () => {
                 </h3>
                 <div className="carousel-card-container">
                   <h1>SAN TECH HUB</h1>
-                  <p style={{ color: "black", marginBottom:"7rem" }}>
+                  <p style={{ color: "black", marginBottom: "7rem" }}>
                     In SAN TECH today , was a great moment with the Global
                     Engagement Institute and delegation of Pepperdine Graziadio
                   </p>
                   <Button
                     variant="primary"
                     className="fs-5"
-                    style={{ width: "50%", padding: ".9rem",borderRadius:"1px"  }}
+                    style={{
+                      width: "50%",
+                      padding: ".9rem",
+                      borderRadius: "1px",
+                    }}
                   >
                     show more &rarr;
                   </Button>
@@ -165,14 +197,18 @@ const Home = () => {
                 </h3>
                 <div className="carousel-card-container">
                   <h1>Last Friday 14/04/2023</h1>
-                  <p style={{ color: "black", marginBottom:"7rem" }}>
+                  <p style={{ color: "black", marginBottom: "7rem" }}>
                     Last Friday 14/04/2023, SAN Tech hub have witnessed a great
                     pitching session of the 2nd cohort of Level 5 participants
                   </p>
                   <Button
                     variant="primary"
                     className="fs-5"
-                    style={{ width: "50%", padding: ".9rem",borderRadius:"1px"  }}
+                    style={{
+                      width: "50%",
+                      padding: ".9rem",
+                      borderRadius: "1px",
+                    }}
                   >
                     show more &rarr;
                   </Button>
@@ -194,14 +230,18 @@ const Home = () => {
                 </h3>
                 <div className="carousel-card-container">
                   <h1>let's thank FAWE Rwanda</h1>
-                  <p style={{ color: "black", marginBottom:"7rem" }}>
+                  <p style={{ color: "black", marginBottom: "7rem" }}>
                     Last Friday the 12.08.2022, this happened when SAN TECH HUB
                     was launched. We may have a very big list of people to
                   </p>
                   <Button
                     variant="primary"
                     className="fs-5"
-                    style={{ width: "50%", padding: ".9rem",borderRadius:"1px"  }}
+                    style={{
+                      width: "50%",
+                      padding: ".9rem",
+                      borderRadius: "1px",
+                    }}
                   >
                     show more &rarr;
                   </Button>
@@ -305,223 +345,13 @@ const Home = () => {
             >
               Latest News
             </h1>
-
-            <div className="container">
-              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 pt-5">
-                <div
-                  className="col mb-5"
-                  data-aos="fade-up-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
-                  <Card
-                    style={{
-                      width: "35rem",
-                      boxShadow: ".2rem .2rem .5rem #d4d4d8",
-                    }}
-                  >
-                    <Card.Img
-                      variant="top"
-                      src="https://pbs.twimg.com/media/Fm1dzrQWAAIxoZB?format=jpg&name=medium"
-                      style={{ height: "38vh" }}
-                    />
-                    <Card.Body>
-                      <Card.Title className="latest-news-container-header-card fs-2 text-center text-uppercase fw-bold mb-5">
-                        SanTech Event
-                      </Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content. up the bulk of
-                        the card's
-                      </Card.Text>
-                      <Button
-                        variant="primary"
-                        className="fs-5"
-                        style={{ width: "100%", padding: ".7rem" }}
-                      >
-                        View more &rarr;
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </div>
-                <div
-                  className="col mb-5"
-                  data-aos="zoom-in"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
-                  <Card
-                    style={{
-                      width: "35rem",
-                      boxShadow: ".2rem .2rem .5rem #d4d4d8",
-                    }}
-                  >
-                    <Card.Img
-                      variant="top"
-                      src="https://igihe.com/local/cache-vignettes/L1000xH666/niyonzima_claudine_avuga_ko_san_tech_yiyeyemeje_guteza_imbere_ikoranabuhanga_rigamije_koroshya_zimwe_muri_serivisi_abantu_bakenera-8007e.jpg?1649864117"
-                      style={{ height: "38vh" }}
-                    />
-                    <Card.Body>
-                      <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
-                        Expert{" "}
-                      </Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button
-                        variant="primary"
-                        className="fs-5"
-                        style={{ width: "100%", padding: ".5rem" }}
-                      >
-                        View more &rarr;
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </div>
-                <div
-                  className="col mb-5"
-                  data-aos="fade-up-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
-                  <Card
-                    style={{
-                      width: "35rem",
-                      boxShadow: ".2rem .2rem .5rem #d4d4d8",
-                    }}
-                  >
-                    <Card.Img
-                      variant="top"
-                      src="https://pbs.twimg.com/media/FvUFWOcWcAA_Rj0?format=jpg&name=4096x4096"
-                      style={{ height: "38vh" }}
-                    />
-                    <Card.Body>
-                      <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
-                        Inspiration
-                      </Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button
-                        variant="primary"
-                        className="fs-5"
-                        style={{ width: "100%", padding: ".7rem" }}
-                      >
-                        View More &rarr;
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </div>
-                <div
-                  className="col"
-                  data-aos="fade-up-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
-                  <Card
-                    style={{
-                      width: "35rem",
-                      boxShadow: ".2rem .2rem .5rem #d4d4d8",
-                    }}
-                  >
-                    <Card.Img
-                      variant="top"
-                      src="https://pbs.twimg.com/media/FvRyNBWXwAACgSM?format=jpg&name=large"
-                      style={{ height: "38vh" }}
-                    />
-                    <Card.Body>
-                      <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
-                        Inspiration
-                      </Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button
-                        variant="primary"
-                        className="fs-5"
-                        style={{ width: "100%", padding: ".7rem" }}
-                      >
-                        View More &rarr;
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </div>
-                <div
-                  className="col"
-                  data-aos="zoom-in"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
-                  <Card
-                    style={{
-                      width: "35rem",
-                      boxShadow: ".2rem .2rem .5rem #d4d4d8",
-                    }}
-                  >
-                    <Card.Img
-                      variant="top"
-                      src="https://pbs.twimg.com/media/Ft_kVHzXsAM68MI?format=jpg&name=900x900"
-                      style={{ height: "38vh" }}
-                    />
-                    <Card.Body>
-                      <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
-                        Inspiration
-                      </Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button
-                        variant="primary"
-                        className="fs-5"
-                        style={{ width: "100%", padding: ".7rem" }}
-                      >
-                        View More &rarr;
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </div>
-                <div
-                  className="col"
-                  data-aos="zoom-in"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
-                >
-                  <Card
-                    style={{
-                      width: "35rem",
-                      boxShadow: ".2rem .2rem .5rem #d4d4d8",
-                    }}
-                  >
-                    <Card.Img
-                      variant="top"
-                      src="https://pbs.twimg.com/media/Fuz9E06WAAQEw4l?format=jpg&name=4096x4096"
-                      style={{ height: "38vh" }}
-                    />
-                    <Card.Body>
-                      <Card.Title className="latest-news-container-header-card  fs-2 text-center text-uppercase fw-bold mb-5">
-                        Inspiration
-                      </Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button
-                        variant="primary"
-                        className="fs-5"
-                        style={{ width: "100%", padding: ".7rem" }}
-                      >
-                        View More &rarr;
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </div>
+            <div className="container home-card-blog">
+              {posts.map((data) => (
+                <HomeCardBlog data={data} />
+              ))}
             </div>
           </div>
+
           <div className="Testmonial-container container-fluid">
             <h1 className="text-center mt-4">Testmonials</h1>
             <div className="Testmonial">

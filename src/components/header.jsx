@@ -135,7 +135,7 @@ const Header = () => {
               <Nav className="">
                 <Nav.Link
                   className="last-link  last-link-home text-center"
-                  href="home"
+                  href="/home"
                   style={{
                     fontSize: "1.5rem",
                     color: "#3b82f6",
@@ -159,7 +159,7 @@ const Header = () => {
 
                 <Nav.Link
                   className="last-link"
-                  href="story"
+                  href="/story"
                   style={{
                     fontSize: "1.5rem",
                     padding: "1rem",
@@ -171,7 +171,7 @@ const Header = () => {
                 </Nav.Link>
                 <Nav.Link
                   className="last-link"
-                  href="contact"
+                  href="/contact"
                   style={{
                     fontSize: "1.5rem",
                     padding: "1rem",

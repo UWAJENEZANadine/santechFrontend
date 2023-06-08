@@ -12,6 +12,7 @@ import Blogs from "./components/dashboard/blogs";
 import Technology from "./components/dashboard/technology";
 import Testmonials from "./components/dashboard/testmoniasl";
 import SignIn from "./pages/signIn";
+import SingleTechBlog from "./pages/singleTechBlog";
 
 function App() {
   return (
@@ -20,11 +21,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="home" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="story" element={<Story />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="SignIn" element={<SignIn />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/story" element={<Story />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/post/:id" element={<SingleTechBlog />} />
       </Routes>
 
       <Routes>
