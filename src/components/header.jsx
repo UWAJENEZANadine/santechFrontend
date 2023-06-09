@@ -138,7 +138,7 @@ const Header = () => {
                   href="/home"
                   style={{
                     fontSize: "1.5rem",
-                    color: "#3b82f6",
+                    padding:"1.5rem",
                     fontWeight: "600",
                   }}
                 >
@@ -149,8 +149,8 @@ const Header = () => {
                   href="about"
                   style={{
                     fontSize: "1.5rem",
-                    padding: "1rem",
-                    color: "#3b82f6",
+                    padding: "2rem",
+                    
                     fontWeight: "600",
                   }}
                 >
@@ -162,8 +162,8 @@ const Header = () => {
                   href="/story"
                   style={{
                     fontSize: "1.5rem",
-                    padding: "1rem",
-                    color: "#3b82f6",
+                    padding: "2rem",
+                 
                     fontWeight: "600",
                   }}
                 >
@@ -174,8 +174,8 @@ const Header = () => {
                   href="/contact"
                   style={{
                     fontSize: "1.5rem",
-                    padding: "1rem",
-                    color: "#3b82f6",
+                    padding: "2rem",
+                   
                     fontWeight: "600",
                   }}
                 >
@@ -191,7 +191,8 @@ const Header = () => {
                   target="__blank"
                   style={{
                     fontSize: "1.5rem",
-                    color: "#3b82f6",
+                    padding: "2rem",
+                    
                     fontWeight: "600",
                   }}
                 >
