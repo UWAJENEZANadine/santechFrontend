@@ -36,12 +36,12 @@ const DashSideBar = () => {
                  
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="technology" className="side-menu-link">
                 <span>< MdOutlineIndeterminateCheckBox/>  <small>technology</small></span>
                 
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="testmonials" className="side-menu-link">
                 <span><TfiComments /> <small>Testmonials</small></span>
@@ -50,13 +50,13 @@ const DashSideBar = () => {
               </li>
               <hr style={{color:"white", marginBottom:"3rem"}}/>
               <li>
-                <NavLink to="settings" className="side-menu-link">
+                <NavLink to="home" className="side-menu-link">
                 <span> <FiSettings /> <small>Settings</small></span>
                  
                 </NavLink>
               </li>
               <li>
-                <NavLink to="settings" className="side-menu-link">
+                <NavLink to="/home" className="side-menu-link">
                 <span> <FiLogOut /> <small>Logout</small></span>
                  
                 </NavLink>

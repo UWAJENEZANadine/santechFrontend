@@ -36,7 +36,7 @@ const BlogCard = ({ data }) => {
                   fontSize: "1.5rem",
                 }}
               >
-                <span>{data?.posted_time}</span>.{moment(data.date).fromNow()}
+                <span>{data?.posted_time}</span>{moment(data.date).fromNow()}
               </span>
             </h1>
           </div>

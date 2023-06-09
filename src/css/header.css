@@ -134,12 +134,13 @@
 .last-link-home {
   font-size: 1.5rem;
   margin-left: 10rem;
-  color: #3b82f6;
+  /* color: #3b82f6; */
  margin-top: .4rem;
 }
 .last-link-radio {
   padding: 3rem;
 }
+
 
 @media only screen and (max-width: 490px) and (min-width: 200px) {
   .Santech-text-logo {
@@ -217,7 +218,7 @@
   .last-link-home {
     padding: 1rem;
     margin-left: 10px;
-    color: #3b82f6;
+    /* color: #3b82f6; */
   }
   .last-link-radio {
     margin-left: -50px;
@@ -250,7 +251,7 @@
   }
 }
 .last-part {
-  padding: 0% 6% 0% 6%;
+  padding: 0% 5% 0% 5%;
   background-color: #f9fafb;
   
 }

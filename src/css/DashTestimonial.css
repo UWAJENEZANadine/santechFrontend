@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Testmonial-container{
+  padding: 5rem;
+  margin-left: 165px;
+  width: calc(100% - 165px);
+  min-height: 92vh;
+  background-color: #f3f4f6;
+}
+.content-Testmonial{
+  display: block;
+  /* background-color: aqua; */
+ 
+}
+.content-Testmonial div{
+  margin: auto;
+  width: 50%;
+  /* background-color: blueviolet; */
+
+}
+.content-Testmonial div input{
+  margin: auto;
+  width: 100%;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 5px;
+}
+.content-Testmonial div textarea{
+  width: 100%;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  height: 20vh;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #ccc;
+}
+.content-Testmonial div button{
+  width: max-content;
+  font-size: 1.5rem;
+  padding: 1rem;
+
+}
+

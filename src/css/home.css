@@ -17,52 +17,48 @@
 .carousel-content {
   padding: 1rem;
   width: 40%;
-  margin-left: 25rem;
+  margin-top: -30%;
+  /* margin-left: 25rem; */
   font-weight: 900;
   font-family: "clash-display", serif;
   background-color: #00000085;
   opacity: 0.8;
   font-weight: 900;
 }
-.carousel-card-container{
+.carousel-card-container {
   background-color: white;
   height: 65vh;
   width: 40%;
   position: absolute;
   top: -410%;
   left: 70%;
-  opacity: .7;
-  border: 8px solid #0697f8;
+  opacity: 0.7;
+  border: 8px solid #014b7c;
   border-radius: 7px;
   padding: 2rem;
-
 }
-.carousel-card-container h1{
+.carousel-card-container h1 {
   text-transform: uppercase;
   color: #03037f;
   margin-bottom: 3rem;
-
 }
-.carousel-card-container p{
+.carousel-card-container p {
   color: #0000;
   line-height: 5vh;
   font-size: 1.7rem;
-
 }
-@media only screen and (max-width: 600px) and (min-width: 400px){
-  .carousel-content{
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  .carousel-content {
     margin-left: 10rem;
   }
-
-
 }
-@media only screen and (max-width: 700px) and (min-width: 600px){
-  .carousel-content{
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  .carousel-content {
     margin-left: 14rem;
   }
 }
-@media only screen and (max-width: 900px) and (min-width: 700px){
-  .carousel-content{
+@media only screen and (max-width: 900px) and (min-width: 700px) {
+  .carousel-content {
     margin-left: 17rem;
   }
 }
@@ -124,14 +120,18 @@
   /* position: relative;
   margin-top: -1.5rem;
   z-index: 1; */
-  background-image: linear-gradient(to right bottom, #014b7c31, rgba(70, 41, 238, 0.432)), url("https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
+  background-image: linear-gradient(
+      to right bottom,
+      #014b7c31,
+      rgba(70, 41, 238, 0.432)
+    ),
+    url("https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
   background-size: cover;
   border-radius: 0.8rem;
   color: white;
   padding: 2rem;
   border: 2px solid #fff;
   margin-bottom: 5rem;
-  
 }
 .num {
   font-size: 4rem;
@@ -163,17 +163,57 @@
 }
 .about-content {
   font-size: 1.5rem;
+  margin-left: 3rem;
+}
+.core-container-header{
+  font-size: 4rem;
+  color: #03037f;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+
+}
+.about-icon-header-automated{
+  font-size: 1.5rem;
   margin-left: 6rem;
+  font-weight: 600;
+
 }
 .latest-news-container {
   font-size: 1.5rem;
-  
- 
 }
-.home-card-blog{
+.addition {
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -5rem;
+  left: 12rem;
+  font-weight: 900;
+}
+.addition2 {
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -5rem;
+  left: 53rem;
+  font-weight: 900;
+}
+
+.addition3 {
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -5rem;
+  left: 120rem;
+  font-weight: 900;
+}
+.addition4{
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -5rem;
+  left: 85rem;
+  font-weight: 900;
+
+}
+.home-card-blog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 }
 .latest-news-container-header {
   font-size: 4rem;
@@ -186,14 +226,11 @@
 }
 @media only screen and (max-width: 600px) and (min-width: 200px) {
   .latest-news-container-header {
-    
     margin-left: 10rem;
   }
 }
-@media only screen and (max-width: 700px) and (min-width: 600px)
-{
+@media only screen and (max-width: 700px) and (min-width: 600px) {
   .latest-news-container-header {
-    
     margin-left: 5rem;
   }
 }
@@ -222,7 +259,6 @@
     transform: translateX(calc(-250px * 7));
   }
 }
-
 
 @media only screen and (max-width: 75em) {
   /*12000px */
@@ -453,24 +489,21 @@
   outline: none;
   animation: pulsate 1s infinite;
 }
-@keyframes scroll{
-  0%{
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
-  100%{
+  100% {
     transform: translateX(-250px);
   }
-
 }
-.partners-card{
+.partners-card {
   width: calc(250px * 14);
   animation: scroll 10s linear infinite;
-
 }
 
 .swiper-container {
   width: 350px;
-
 }
 
 .bp-640,

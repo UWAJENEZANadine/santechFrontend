@@ -2,7 +2,7 @@ import React from "react";
 import Chart from "react-apexcharts";
 import { Table, Divider, Tag } from "antd";
 import "../../css/LayoutDash.css";
-
+import { Link } from "react-router-dom";
 import { Chart as ChartJS, registerables } from "chart.js";
 ChartJS.register(...registerables);
 
@@ -51,22 +51,19 @@ const Dashboard = () => {
       key: "1",
       name: "John Brown",
       age: 32,
-      address: "Kigali,Nyarugenge "
-      
+      address: "Kigali,Nyarugenge ",
     },
     {
       key: "2",
       name: "Jim Green",
       age: 42,
-      address: "Kigali,Gasabo"
-    
+      address: "Kigali,Gasabo",
     },
     {
       key: "3",
       name: "keza Tessy",
       age: 32,
       address: "Kigali,Nyarugenge",
-     
     },
   ];
   const data = {
@@ -163,18 +160,9 @@ const Dashboard = () => {
               <div className="add">
                 <span>Entries</span>
 
-                <button>Add record</button>
-              </div>
-
-              <div className="browse">
-                <input
-                  type="search"
-                  placeholder="Search"
-                  className="record-search"
-                />
-                <select name="" id="">
-                  <option value="">Status</option>
-                </select>
+                <button>
+                  <Link to="testmonials" style={{textDecoration:"none", color:"white"}}> Add Testmonials</Link>
+                </button>
               </div>
             </div>
           </div>

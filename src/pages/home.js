@@ -13,9 +13,11 @@ import { AiFillStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
+import { AiFillProject } from "react-icons/ai"
 import { Link } from "react-router-dom";
 import PageLayout from "./pageLayout";
 import HomeCardBlog from "../components/HomeCardBlog";
+import { BsDot } from "react-icons/bs"
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -61,22 +63,23 @@ const Home = () => {
             >
               <img className="d-block w-100" src={pic1} alt="First slide" />
               <Carousel.Caption>
-                <h3 className="carousel-content text-white display-6">
+              {/* <h3 className="carousel-content text-white display-6">
                   First slide label
-                </h3>
-                <div className="carousel-card-container">
+                </h3> */}
+                <div className="carousel-card-container carousel-content ">
                   <h1 className="text-center">Project</h1>
                   <p style={{ color: "black", marginBottom: "7rem" }}>
                     No body will remain the Identity card on entrance mostly
                     visitors, by use of E-Visitors System @NidaRwanda , It{" "}
                   </p>
                   <Button
-                    variant="primary"
+                    
                     className="fs-5"
                     style={{
                       width: "50%",
                       padding: ".9rem",
                       borderRadius: "1px",
+                      backgroundColor:"#014b7c"
                     }}
                   >
                     show more &rarr;
@@ -94,22 +97,23 @@ const Home = () => {
               />
 
               <Carousel.Caption>
-                <h3 className="carousel-content text-white display-6">
+                {/* <h3 className="carousel-content text-white display-6">
                   Second slide label
-                </h3>
-                <div className="carousel-card-container">
+                </h3> */}
+                <div className="carousel-card-container carousel-content">
                   <h1>Binyuza mwikoranabuhanga</h1>
                   <p style={{ color: "black", marginBottom: "7rem" }}>
                     Binyuza mwikoranabuhanga twize<a href="">@urcst</a> Ubu
                     Itsinda ry'urubyiruko( SAN TECH) ryakoze ikoranabuhanga
                   </p>
                   <Button
-                    variant="primary"
+                    
                     className="fs-5"
                     style={{
                       width: "50%",
                       padding: ".9rem",
                       borderRadius: "1px",
+                      backgroundColor:"#014b7c"
                     }}
                   >
                     show more &rarr;
@@ -127,22 +131,23 @@ const Home = () => {
               />
 
               <Carousel.Caption>
-                <h3 className="carousel-content text-white display-6">
+                {/* <h3 className="carousel-content text-white display-6">
                   Third slide label
-                </h3>
-                <div className="carousel-card-container">
+                </h3> */}
+                <div className="carousel-card-container carousel-content">
                   <h1>In SAN TECH today</h1>
                   <p style={{ color: "black", marginBottom: "7rem" }}>
                     In SAN TECH today , was a great moment with the Global
                     Engagement Institute and delegation of Pepperdine Graziadio
                   </p>
                   <Button
-                    variant="primary"
+                  
                     className="fs-5"
                     style={{
                       width: "50%",
                       padding: ".9rem",
                       borderRadius: "1px",
+                      backgroundColor:"#014b7c"
                     }}
                   >
                     show more &rarr;
@@ -160,22 +165,23 @@ const Home = () => {
               />
 
               <Carousel.Caption>
-                <h3 className="carousel-content text-white display-6">
+                {/* <h3 className="carousel-content text-white display-6 ">
                   Four slide label
-                </h3>
-                <div className="carousel-card-container">
+                </h3> */}
+                <div className="carousel-card-container carousel-content">
                   <h1>SAN TECH HUB</h1>
                   <p style={{ color: "black", marginBottom: "7rem" }}>
                     In SAN TECH today , was a great moment with the Global
                     Engagement Institute and delegation of Pepperdine Graziadio
                   </p>
                   <Button
-                    variant="primary"
+                    
                     className="fs-5"
                     style={{
                       width: "50%",
                       padding: ".9rem",
                       borderRadius: "1px",
+                      backgroundColor:"#014b7c"
                     }}
                   >
                     show more &rarr;
@@ -192,22 +198,23 @@ const Home = () => {
                 alt="five slide"
               />
               <Carousel.Caption>
-                <h3 className="carousel-content text-white display-6">
+                {/* <h3 className="carousel-content text-white display-6">
                   Five slide label
-                </h3>
-                <div className="carousel-card-container">
+                </h3> */}
+                <div className="carousel-card-container carousel-content">
                   <h1>Last Friday 14/04/2023</h1>
                   <p style={{ color: "black", marginBottom: "7rem" }}>
                     Last Friday 14/04/2023, SAN Tech hub have witnessed a great
                     pitching session of the 2nd cohort of Level 5 participants
                   </p>
                   <Button
-                    variant="primary"
+                    
                     className="fs-5"
                     style={{
                       width: "50%",
                       padding: ".9rem",
                       borderRadius: "1px",
+                      backgroundColor:"#014b7c"
                     }}
                   >
                     show more &rarr;
@@ -225,22 +232,23 @@ const Home = () => {
               />
 
               <Carousel.Caption>
-                <h3 className="carousel-content text-white display-6">
+                {/* <h3 className="carousel-content text-white display-6">
                   Six slide label
-                </h3>
-                <div className="carousel-card-container">
+                </h3> */}
+                <div className="carousel-card-container carousel-content">
                   <h1>let's thank FAWE Rwanda</h1>
                   <p style={{ color: "black", marginBottom: "7rem" }}>
                     Last Friday the 12.08.2022, this happened when SAN TECH HUB
                     was launched. We may have a very big list of people to
                   </p>
                   <Button
-                    variant="primary"
+                    
                     className="fs-5"
                     style={{
                       width: "50%",
                       padding: ".9rem",
                       borderRadius: "1px",
+                      backgroundColor:"#014b7c"
                     }}
                   >
                     show more &rarr;
@@ -253,30 +261,44 @@ const Home = () => {
             <div className="first-part-content d-flex justify-content-between align-items-center">
               <div className="p-5">
                 <TbDeviceComputerCamera className="service-icon" />
-                <h1 className="num" data-val="150">
-                  000
+                <h1 className="num" data-val="150"  >
+                  000 
+                 
                 </h1>
+                <span className="addition">+</span>
                 <p>SanTech Hub</p>
               </div>
               <div>
                 <FiCommand className="service-icon" />
 
-                <h1 className="num" data-val="164">
+                <h1 className="num" data-val="165">
                   000
                 </h1>
+                <span className="addition2">+</span>
                 <p>E-vistors</p>
+              </div>
+              <div>
+                <AiFillProject className="service-icon" />
+
+                <h1 className="num" data-val="70">
+                  000
+                </h1>
+                <span className="addition4">+</span>
+                <p>Projects</p>
               </div>
               <div className="p-5">
                 <GoFileSymlinkFile className="service-icon" />
                 <h1 className="num" data-val="1">
                   0
                 </h1>
+                <span className="addition3">+</span>
                 <p>Annika Technology</p>
               </div>
             </div>
           </div>
           <section className="second-part container-fluid">
             <div className="second-part-service container">
+              <h1 className="core-container-header text-center">CORE PROJECTS</h1>
               <div className="row">
                 <div
                   className="col p-5"
@@ -289,11 +311,11 @@ const Home = () => {
                     <span className="about-icon-header">SAN TECH HUB</span>
                   </h1>
                   <ul className="about-content">
-                    <li>About</li>
-                    <li>online business registration</li>
-                    <li>Requirements</li>
-                    <li>Legal documents</li>
-                    <li>Post registration filling</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/> Provide Trainings & internship</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Access to fast internet</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Technical suppoert to students</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>ICT career guidance</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Invention & Innovation skills development</li>
                   </ul>
                 </div>
                 <div
@@ -304,15 +326,17 @@ const Home = () => {
                 >
                   <h1 className="display-6">
                     <FcElectricity className="about-icon" />
-                    <span className="about-icon-header">E-vistors system</span>
+                    <span className="about-icon-header">E-vistors system </span>
+                    <span className="about-icon-header-automated">Automated attendace for: </span>
                   </h1>
                   <ul className="about-content">
-                    <li>About</li>
-                    <li>online business registration</li>
-                    <li>Requirements</li>
-                    <li>Legal documents</li>
-                    <li>Post registration filling</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Staffs</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Visitors</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Casual Workers</li>
+                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Contractors</li>
+                    
                   </ul>
+                  <p> <span className="about-icon-header">By use of identification Cards or Generated cards everywhere </span></p>
                 </div>
                 <div
                   className="col p-5"
@@ -325,11 +349,8 @@ const Home = () => {
                     <span className="about-icon-header">Annika Technology</span>
                   </h1>
                   <ul className="about-content">
-                    <li>About</li>
-                    <li>online business registration</li>
-                    <li>Requirements</li>
-                    <li>Legal documents</li>
-                    <li>Post registration filling</li>
+                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>Automated drying sheltersfor harvest</li>
+                   
                   </ul>
                 </div>
               </div>
@@ -491,7 +512,7 @@ const Home = () => {
                 className=""
                 src="https://www.girlsinict.rw/images/title-design.png"
               />
-              <span className="p-5">Our Partners</span>
+              <span className="p-5">Clients & Partners</span>
               <img
                 className=""
                 src="https://www.girlsinict.rw/images/title-design.png"
@@ -525,7 +546,7 @@ const Home = () => {
                 },
               }}
               modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={4}
+              spaceBetween={2}
               navigation
               loop={true}
               onSlideChange={() => console.log("slide change")}
@@ -535,88 +556,88 @@ const Home = () => {
               <SwiperSlide style={{ marginLeft: "4rem" }}>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://pbs.twimg.com/profile_images/1014071220583784448/ZGDmicJm_400x400.jpg"
-                    style={{ width: "100%", height: "40vh" }}
+                    style={{ width: "100%", height: "20vh" }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
-                    style={{ width: "93%" }}
+                    style={{ width: "93%",  height: "20vh" }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://www.learningpassport.org/sites/unicef.org.learningpassport/files/styles/crop_thumbnail/public/partner-logo_Generation-Unlimited.png?itok=DTCZ6Hcv"
-                    style={{ width: "100%", height: "40vh" }}
+                    style={{ width: "100%", height: "20vh" }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://thumbs.dreamstime.com/b/unicef-united-nations-international-children-s-emergency-fund-flag-waving-white-background-close-up-isolated-d-render-realistic-169592090.jpg"
-                    style={{ width: "100%", height: "40vh" }}
+                    style={{ width: "100%", height: "20vh" }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://pbs.twimg.com/profile_images/1512032108876865536/s2MqZaRv_400x400.jpg"
-                    style={{ width: "100%" }}
+                    style={{ width: "100%", height: "20vh" }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://caribbean.eclac.org/sites/default/files/organizations/images/UN%20logo.png"
-                    style={{ width: "100%" }}
+                    style={{ width: "100%", height: "20vh" }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://thumbs.dreamstime.com/b/mastercard-logo-printed-paper-chisinau-moldova-september-mastercard-logo-printed-paper-placed-white-background-128373484.jpg"
-                    style={{ width: "100%", height: "39vh" }}
+                    style={{ width: "100%", height: "23vh" }}
                   />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div
                   class="card partners-card"
-                  style={{ width: "25rem", borderBottom: "3px solid #03037f" }}
+                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
                 >
                   <img
                     src="https://www.risa.gov.rw/index.php?eID=dumpFile&t=f&f=52253&token=97a6bf4950ecf39417b4b7babc6b7a70a6712ffa"
-                    style={{ width: "100%", height: "39vh" }}
+                    style={{ width: "100%", height: "23vh" }}
                   />
                 </div>
               </SwiperSlide>
