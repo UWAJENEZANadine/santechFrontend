@@ -23,9 +23,9 @@ const Footer = () => {
               <ul className="list">
                 <li className="list-item">Virtually Reality(VR) Technology</li>
                 <li className="list-item">Reasearch and Product development</li>
-                <li className="list-item">Innovation and career tech hub development </li>
-                 
-               
+                <li className="list-item">
+                  Innovation and career tech hub development{" "}
+                </li>
               </ul>
             </div>
             <div className="col mb-5">
@@ -33,17 +33,26 @@ const Footer = () => {
               <div className="d-flex gap-5">
                 <div>
                   <h5 className="mb-4">
-                    <NavLink className="text-white text-decoration-none" to="">
+                    <NavLink
+                      className="text-white text-decoration-none"
+                      to="/home"
+                    >
                       Home
                     </NavLink>
                   </h5>
                   <h5 className="mb-4">
-                    <NavLink className="text-white text-decoration-none" to="">
+                    <NavLink
+                      className="text-white text-decoration-none"
+                      to="/about"
+                    >
                       About us
                     </NavLink>
                   </h5>
                   <h5 className="mb-4">
-                    <NavLink className="text-white text-decoration-none" to="">
+                    <NavLink
+                      className="text-white text-decoration-none"
+                      to="/story"
+                    >
                       Success Stories
                     </NavLink>
                   </h5>
@@ -55,7 +64,10 @@ const Footer = () => {
                     </NavLink>
                   </h5>
                   <h5 className="mb-4">
-                    <NavLink className="text-white text-decoration-none" to="">
+                    <NavLink
+                      className="text-white text-decoration-none"
+                      to="/contact"
+                    >
                       contact us
                     </NavLink>
                   </h5>
@@ -90,11 +102,42 @@ const Footer = () => {
               &copy; Copyright San Tech Ltd Rwanda 2022. All Rights Reserved
             </div>
             <div className="">
-              <BsFacebook className="fs-2 m-2" />
-              <FaTwitterSquare className="fs-2 m-2" />
-              <IoLogoYoutube className="fs-2 m-2" />
-              <AiFillLinkedin className="fs-2 m-2" />
-              <FaInstagram className="fs-2 m-2" />
+              <NavLink
+                to="https://www.facebook.com/SANTechRwanda/"
+                target="__blank"
+                className="text-white"
+              >
+                {" "}
+                <BsFacebook className="fs-2 m-2" />
+              </NavLink>
+              <NavLink
+                to="https://twitter.com/santechltd3?lang=en"
+                target="__blank"
+                className="text-white"
+              >
+                <FaTwitterSquare className="fs-2 m-2" />
+              </NavLink>
+              <NavLink
+                to="https://www.youtube.com/@santech2809/videos"
+                target="__blank"
+                className="text-white"
+              >
+                <IoLogoYoutube className="fs-2 m-2" />
+              </NavLink>
+              <NavLink
+                to="https://www.linkedin.com/in/san-tech-ltd-80b1a71a2/"
+                target="__blank"
+                className="text-white"
+              >
+                <AiFillLinkedin className="fs-2 m-2" />
+              </NavLink>
+              <NavLink
+                to="https://www.facebook.com/SANTechRwanda/"
+                target="__blank"
+                className="text-white"
+              >
+                <FaInstagram className="fs-2 m-2" />
+              </NavLink>
             </div>
           </div>
         </div>

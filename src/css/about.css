@@ -21,6 +21,12 @@
 .mission-container {
   padding-top: 3rem; 
 }
+.about-paragraph{
+  color: #333;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2.5rem;
+}
 
 .mission-container .row {
   background-color: #e0e7ff;
@@ -33,6 +39,7 @@
   background-color: #f0fdfa;
   padding: 2rem;
   min-height: 50vh; 
+  margin: 1rem;
  
 }
 
