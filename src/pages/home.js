@@ -349,7 +349,10 @@ const Home = () => {
                     <span className="about-icon-header">Annika Technology</span>
                   </h1>
                   <ul className="about-content">
-                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>Automated drying sheltersfor harvest</li>
+                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>Value addition and climate resilient smart agriculture</li>
+                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/> Agricultural  research for post-harvest</li>
+                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>High value crop for agribusiness</li>
+                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>Smart harvest drying shelters that automates the covering shapes and exposing harvest from the sun and rain</li>
                    
                   </ul>
                 </div>
