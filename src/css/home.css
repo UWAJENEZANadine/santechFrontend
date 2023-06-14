@@ -151,7 +151,7 @@
 .second-part-service .row .col {
   background-image: linear-gradient(to right, #f8fafc, #eff6ff);
   margin: 1rem;
-  height: 50vh;
+  min-height: 50vh;
   border-radius: 5px;
   border-bottom: 2px solid #2196f3;
 }
@@ -268,6 +268,229 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 576px) {
+  .carousel-card-container{
+    display: none;
+  }
+  .home-background{
+    height: 80vh;
+  }
+ .service-icon{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+ }
+ .num{
+  font-size: 2rem;
+
+ }
+ .addition {
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -3.5rem;
+  left: 9rem;
+  font-weight: 900;
+}
+.addition2 {
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -3.5rem;
+  left: 20rem;
+  font-weight: 900;
+}
+
+.addition3 {
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -3.5rem;
+  left: 25rem;
+  font-weight: 900;
+}
+.addition4{
+  font-size: 2.5rem;
+  position: absolute;
+  margin-top: -3.6rem;
+  left: 32rem;
+  font-weight: 900;
+
+}
+.service-icon-p{
+  margin-top: -3rem;
+}
+.num-p{
+  margin-top: -1rem;
+}
+.second-part-service .row {
+  display: block;
+ 
+}
+
+
+}
+@media only screen and (max-width: 768px) {
+  .addition {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -3.5rem;
+    left: 8.5rem;
+    font-weight: 900;
+  }
+  .addition2 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -3.5rem;
+    left: 21rem;
+    font-weight: 900;
+  }
+  .service-icon-p{
+    margin-top: 0rem;
+  }
+  .num-p{
+    margin-top: 0rem;
+  }
+  
+  .addition3 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -3.5rem;
+    left: 26rem;
+    font-weight: 900;
+  }
+  .addition4{
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -3.6rem;
+    left: 34rem;
+    font-weight: 900;
+  
+  }
+  .second-part-service .row {
+    display: block;
+   
+  }
+
+}
+@media only screen and (max-width: 992px) {
+  .addition {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 12rem;
+    font-weight: 900;
+  }
+  .addition2 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 34rem;
+    font-weight: 900;
+  }
+  .service-icon-p{
+    margin-top: 0rem;
+  }
+  .num-p{
+    margin-top: 0rem;
+  }
+  
+  .addition3 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 48rem;
+    font-weight: 900;
+  }
+  .addition4{
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.6rem;
+    left: 65rem;
+    font-weight: 900;
+  
+  }
+
+}
+@media only screen and (max-width: 1020px) {
+  .addition {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 12rem;
+    font-weight: 900;
+  }
+  .addition2 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 41rem;
+    font-weight: 900;
+  }
+  .service-icon-p{
+    margin-top: 0rem;
+  }
+  .num-p{
+    margin-top: 0rem;
+  }
+  
+  .addition3 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 63rem;
+    font-weight: 900;
+  }
+  .addition4{
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.6rem;
+    left: 86rem;
+    font-weight: 900;
+  
+  }
+
+}
+@media only screen and (max-width: 1119px) {
+  .addition {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 12rem;
+    font-weight: 900;
+  }
+  .addition2 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -5rem;
+    left: 45rem;
+    font-weight: 900;
+  }
+  .service-icon-p{
+    margin-top: 0rem;
+  }
+  .num-p{
+    margin-top: 0rem;
+  }
+  
+  .addition3 {
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.9rem;
+    left: 69rem;
+    font-weight: 900;
+  }
+  .addition4{
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: -4.6rem;
+    left: 96rem;
+    font-weight: 900;
+  
+  }
+
+}
+
+
+
+
+
 
 .Testmonial-container {
   background-color: #faf9f9;
@@ -500,6 +723,11 @@
 .partners-card {
   width: calc(250px * 14);
   animation: scroll 10s linear infinite;
+}
+.partners-card img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+
 }
 
 .swiper-container {
