@@ -58,10 +58,10 @@ const Home = () => {
       <PageLayout>
         <section className="homepage-container">
           <Carousel fade className="home-container" data-interval="1000">
-            <Carousel.Item
+            <Carousel.Item className="home-background"
               style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
             >
-              <img className="d-block w-100" src={pic1} alt="First slide" />
+              <img className="d-block w-100 home-background" src={pic1} alt="First slide" />
               <Carousel.Caption>
               {/* <h3 className="carousel-content text-white display-6">
                   First slide label
@@ -91,7 +91,7 @@ const Home = () => {
               style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
             >
               <img
-                className="d-block w-100"
+                className="d-block w-100 home-background"
                 src="https://pbs.twimg.com/media/FbCQsE7XwAATF4L?format=jpg&name=medium"
                 alt="Second slide"
               />
@@ -125,7 +125,7 @@ const Home = () => {
               style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
             >
               <img
-                className="d-block w-100"
+                className="d-block w-100 home-background"
                 src="https://pbs.twimg.com/media/FuFZBfWXwAA5m2X?format=jpg&name=medium"
                 alt="Third slide"
               />
@@ -159,7 +159,7 @@ const Home = () => {
               style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
             >
               <img
-                className="d-block w-100"
+                className="d-block w-100 home-background"
                 src="https://pbs.twimg.com/media/FuFZBfUXsAAVBQ6?format=jpg&name=medium"
                 alt="four slide"
               />
@@ -193,7 +193,7 @@ const Home = () => {
               style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
             >
               <img
-                className="d-block w-100"
+                className="d-block w-100 home-background"
                 src="https://pbs.twimg.com/media/Ft_eOG_XsAAh2Tb?format=jpg&name=medium"
                 alt="five slide"
               />
@@ -226,7 +226,7 @@ const Home = () => {
               style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
             >
               <img
-                className="d-block w-100"
+                className="d-block w-100 home-background"
                 src="https://pbs.twimg.com/media/FaX8yoFXoAAdwsb?format=jpg&name=medium"
                 alt="six slide"
               />
@@ -278,9 +278,9 @@ const Home = () => {
                 <p>E-vistors</p>
               </div>
               <div>
-                <AiFillProject className="service-icon" />
+                <AiFillProject className="service-icon service-icon-p" />
 
-                <h1 className="num" data-val="70">
+                <h1 className="num num-p" data-val="70">
                   000
                 </h1>
                 <span className="addition4">+</span>

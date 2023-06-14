@@ -42,6 +42,33 @@
   margin: 1rem;
  
 }
+@media only screen and (max-width: 576px) {
+  .mission-container .row{
+    display: block;
+  }
+  .our-staff-container-line::before{
+  display: none;
+  }
+  .our-staff-container-line::after{
+    display: none;
+
+  }
+ 
+
+}
+@media only screen and (max-width: 768px) {
+  .mission-container .row{
+    display: block;
+  }
+  .our-staff-container-line::before{
+    display: none;
+    }
+    .our-staff-container-line::after{
+      display: none;
+  
+    }
+
+}
 
 
 .mission-container .row .col p {
