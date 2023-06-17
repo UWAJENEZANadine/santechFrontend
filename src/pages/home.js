@@ -13,11 +13,11 @@ import { AiFillStar } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
-import { AiFillProject } from "react-icons/ai"
+import { AiFillProject } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import PageLayout from "./pageLayout";
 import HomeCardBlog from "../components/HomeCardBlog";
-import { BsDot } from "react-icons/bs"
+import { BsDot } from "react-icons/bs";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -53,217 +53,87 @@ const Home = () => {
     });
   }, []);
 
+  const [homeslide, setHomeslide] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("http://localhost:4040/homeslides");
+        console.log(res);
+        setHomeslide(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const [partneer, setPartneer] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("http://localhost:4040/partner");
+        console.log(res);
+        setPartneer(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <PageLayout>
         <section className="homepage-container">
           <Carousel fade className="home-container" data-interval="1000">
-            <Carousel.Item className="home-background"
-              style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
-            >
-              <img className="d-block w-100 home-background" src={pic1} alt="First slide" />
-              <Carousel.Caption>
-              {/* <h3 className="carousel-content text-white display-6">
-                  First slide label
-                </h3> */}
-                <div className="carousel-card-container carousel-content ">
-                  <h1 className="text-center">Project</h1>
-                  <p style={{ color: "black", marginBottom: "7rem" }}>
-                    No body will remain the Identity card on entrance mostly
-                    visitors, by use of E-Visitors System @NidaRwanda , It{" "}
-                  </p>
-                  <Button
-                    
-                    className="fs-5"
-                    style={{
-                      width: "50%",
-                      padding: ".9rem",
-                      borderRadius: "1px",
-                      backgroundColor:"#014b7c"
-                    }}
-                  >
-                    show more &rarr;
-                  </Button>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item
-              style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
-            >
-              <img
-                className="d-block w-100 home-background"
-                src="https://pbs.twimg.com/media/FbCQsE7XwAATF4L?format=jpg&name=medium"
-                alt="Second slide"
-              />
-
-              <Carousel.Caption>
-                {/* <h3 className="carousel-content text-white display-6">
-                  Second slide label
-                </h3> */}
-                <div className="carousel-card-container carousel-content">
-                  <h1>Binyuza mwikoranabuhanga</h1>
-                  <p style={{ color: "black", marginBottom: "7rem" }}>
-                    Binyuza mwikoranabuhanga twize<a href="">@urcst</a> Ubu
-                    Itsinda ry'urubyiruko( SAN TECH) ryakoze ikoranabuhanga
-                  </p>
-                  <Button
-                    
-                    className="fs-5"
-                    style={{
-                      width: "50%",
-                      padding: ".9rem",
-                      borderRadius: "1px",
-                      backgroundColor:"#014b7c"
-                    }}
-                  >
-                    show more &rarr;
-                  </Button>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item
-              style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
-            >
-              <img
-                className="d-block w-100 home-background"
-                src="https://pbs.twimg.com/media/FuFZBfWXwAA5m2X?format=jpg&name=medium"
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                {/* <h3 className="carousel-content text-white display-6">
-                  Third slide label
-                </h3> */}
-                <div className="carousel-card-container carousel-content">
-                  <h1>In SAN TECH today</h1>
-                  <p style={{ color: "black", marginBottom: "7rem" }}>
-                    In SAN TECH today , was a great moment with the Global
-                    Engagement Institute and delegation of Pepperdine Graziadio
-                  </p>
-                  <Button
-                  
-                    className="fs-5"
-                    style={{
-                      width: "50%",
-                      padding: ".9rem",
-                      borderRadius: "1px",
-                      backgroundColor:"#014b7c"
-                    }}
-                  >
-                    show more &rarr;
-                  </Button>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item
-              style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
-            >
-              <img
-                className="d-block w-100 home-background"
-                src="https://pbs.twimg.com/media/FuFZBfUXsAAVBQ6?format=jpg&name=medium"
-                alt="four slide"
-              />
-
-              <Carousel.Caption>
-                {/* <h3 className="carousel-content text-white display-6 ">
-                  Four slide label
-                </h3> */}
-                <div className="carousel-card-container carousel-content">
-                  <h1>SAN TECH HUB</h1>
-                  <p style={{ color: "black", marginBottom: "7rem" }}>
-                    In SAN TECH today , was a great moment with the Global
-                    Engagement Institute and delegation of Pepperdine Graziadio
-                  </p>
-                  <Button
-                    
-                    className="fs-5"
-                    style={{
-                      width: "50%",
-                      padding: ".9rem",
-                      borderRadius: "1px",
-                      backgroundColor:"#014b7c"
-                    }}
-                  >
-                    show more &rarr;
-                  </Button>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item
-              style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
-            >
-              <img
-                className="d-block w-100 home-background"
-                src="https://pbs.twimg.com/media/Ft_eOG_XsAAh2Tb?format=jpg&name=medium"
-                alt="five slide"
-              />
-              <Carousel.Caption>
-                {/* <h3 className="carousel-content text-white display-6">
-                  Five slide label
-                </h3> */}
-                <div className="carousel-card-container carousel-content">
-                  <h1>Last Friday 14/04/2023</h1>
-                  <p style={{ color: "black", marginBottom: "7rem" }}>
-                    Last Friday 14/04/2023, SAN Tech hub have witnessed a great
-                    pitching session of the 2nd cohort of Level 5 participants
-                  </p>
-                  <Button
-                    
-                    className="fs-5"
-                    style={{
-                      width: "50%",
-                      padding: ".9rem",
-                      borderRadius: "1px",
-                      backgroundColor:"#014b7c"
-                    }}
-                  >
-                    show more &rarr;
-                  </Button>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item
-              style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
-            >
-              <img
-                className="d-block w-100 home-background"
-                src="https://pbs.twimg.com/media/FaX8yoFXoAAdwsb?format=jpg&name=medium"
-                alt="six slide"
-              />
-
-              <Carousel.Caption>
-                {/* <h3 className="carousel-content text-white display-6">
-                  Six slide label
-                </h3> */}
-                <div className="carousel-card-container carousel-content">
-                  <h1>let's thank FAWE Rwanda</h1>
-                  <p style={{ color: "black", marginBottom: "7rem" }}>
-                    Last Friday the 12.08.2022, this happened when SAN TECH HUB
-                    was launched. We may have a very big list of people to
-                  </p>
-                  <Button
-                    
-                    className="fs-5"
-                    style={{
-                      width: "50%",
-                      padding: ".9rem",
-                      borderRadius: "1px",
-                      backgroundColor:"#014b7c"
-                    }}
-                  >
-                    show more &rarr;
-                  </Button>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
+            {homeslide.map((data) => (
+              <Carousel.Item
+                className="home-background"
+                style={{ height: "80vh", backgroundColor: "rgb(0, 0, 0)" }}
+              >
+                <img
+                  className="d-block w-100 home-background"
+                  src={`../uploads/${data?.imag}`}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  {/* <h3 className="carousel-content text-white display-6">
+                First slide label
+              </h3> */}
+                  <div className="carousel-card-container carousel-content ">
+                    <h1 className="text-center">{data.tittle}</h1>
+                    <p style={{ color: "black", marginBottom: "7rem" }}>
+                      {data.captionn}
+                    </p>
+                    <Button
+                      className="fs-5"
+                      style={{
+                        width: "50%",
+                        padding: ".9rem",
+                        borderRadius: "1px",
+                        backgroundColor: "#014b7c",
+                      }}
+                    >
+                      <Link
+                        to="/blog"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        show more &rarr;
+                      </Link>
+                    </Button>
+                  </div>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))}
           </Carousel>
           <div className="first-part">
             <div className="first-part-content d-flex justify-content-between align-items-center">
               <div className="p-5">
                 <TbDeviceComputerCamera className="service-icon" />
-                <h1 className="num" data-val="150"  >
-                  000 
-                 
+                <h1 className="num" data-val="150">
+                  000
                 </h1>
                 <span className="addition">+</span>
                 <p>SanTech Hub</p>
@@ -298,7 +168,9 @@ const Home = () => {
           </div>
           <section className="second-part container-fluid">
             <div className="second-part-service container">
-              <h1 className="core-container-header text-center">CORE PROJECTS</h1>
+              <h1 className="core-container-header text-center">
+                CORE PROJECTS
+              </h1>
               <div className="row">
                 <div
                   className="col p-5"
@@ -311,11 +183,26 @@ const Home = () => {
                     <span className="about-icon-header">SAN TECH HUB</span>
                   </h1>
                   <ul className="about-content">
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/> Provide Trainings & internship</li>
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Access to fast internet</li>
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Technical suppoert to students</li>
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>ICT career guidance</li>
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Invention & Innovation skills development</li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />{" "}
+                      Provide Trainings & internship
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Access to fast internet
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Technical suppoert to students
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      ICT career guidance
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Invention & Innovation skills development
+                    </li>
                   </ul>
                 </div>
                 <div
@@ -327,16 +214,35 @@ const Home = () => {
                   <h1 className="display-6">
                     <FcElectricity className="about-icon" />
                     <span className="about-icon-header">E-vistors system </span>
-                    <span className="about-icon-header-automated">Automated attendace for: </span>
+                    <span className="about-icon-header-automated">
+                      Automated attendace for:{" "}
+                    </span>
                   </h1>
                   <ul className="about-content">
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Staffs</li>
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Visitors</li>
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Casual Workers</li>
-                    <li><BsDot style={{fontSize:"3rem",color:"#014b7c"}}/>Contractors</li>
-                    
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Staffs
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Visitors
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Casual Workers
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Contractors
+                    </li>
                   </ul>
-                  <p> <span className="about-icon-header">By use of identification Cards or Generated cards everywhere </span></p>
+                  <p>
+                    {" "}
+                    <span className="about-icon-header">
+                      By use of identification Cards or Generated cards
+                      everywhere{" "}
+                    </span>
+                  </p>
                 </div>
                 <div
                   className="col p-5"
@@ -349,11 +255,23 @@ const Home = () => {
                     <span className="about-icon-header">Annika Technology</span>
                   </h1>
                   <ul className="about-content">
-                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>Value addition and climate resilient smart agriculture</li>
-                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/> Agricultural  research for post-harvest</li>
-                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>High value crop for agribusiness</li>
-                    <li ><BsDot style={{fontSize:"3rem", color:"#014b7c"}}/>Smart harvest drying shelters that automates the covering shapes and exposing harvest from the sun and rain</li>
-                   
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Value addition and climate resilient smart agriculture
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />{" "}
+                      Agricultural research for post-harvest
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      High value crop for agribusiness
+                    </li>
+                    <li>
+                      <BsDot style={{ fontSize: "3rem", color: "#014b7c" }} />
+                      Smart harvest drying shelters that automates the covering
+                      shapes and exposing harvest from the sun and rain
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -556,94 +474,22 @@ const Home = () => {
               onSwiper={(swiper) => console.log(swiper)}
               style={{ marginTop: "6rem" }}
             >
-              <SwiperSlide style={{ marginLeft: "4rem" }}>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://pbs.twimg.com/profile_images/1014071220583784448/ZGDmicJm_400x400.jpg"
-                    style={{ width: "100%", height: "20vh" }}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_Rwanda.svg/250px-Coat_of_arms_of_Rwanda.svg.png"
-                    style={{ width: "93%",  height: "20vh" }}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://www.learningpassport.org/sites/unicef.org.learningpassport/files/styles/crop_thumbnail/public/partner-logo_Generation-Unlimited.png?itok=DTCZ6Hcv"
-                    style={{ width: "100%", height: "20vh" }}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://thumbs.dreamstime.com/b/unicef-united-nations-international-children-s-emergency-fund-flag-waving-white-background-close-up-isolated-d-render-realistic-169592090.jpg"
-                    style={{ width: "100%", height: "20vh" }}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://pbs.twimg.com/profile_images/1512032108876865536/s2MqZaRv_400x400.jpg"
-                    style={{ width: "100%", height: "20vh" }}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://caribbean.eclac.org/sites/default/files/organizations/images/UN%20logo.png"
-                    style={{ width: "100%", height: "20vh" }}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://thumbs.dreamstime.com/b/mastercard-logo-printed-paper-chisinau-moldova-september-mastercard-logo-printed-paper-placed-white-background-128373484.jpg"
-                    style={{ width: "100%", height: "23vh" }}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  class="card partners-card"
-                  style={{ width: "15rem", borderBottom: "3px solid #03037f" }}
-                >
-                  <img
-                    src="https://www.risa.gov.rw/index.php?eID=dumpFile&t=f&f=52253&token=97a6bf4950ecf39417b4b7babc6b7a70a6712ffa"
-                    style={{ width: "100%", height: "23vh" }}
-                  />
-                </div>
-              </SwiperSlide>
+              {partneer.map((data) => (
+                <SwiperSlide style={{ marginLeft: "4rem" }}>
+                  <div
+                    class="card partners-card"
+                    style={{
+                      width: "15rem",
+                      borderBottom: "3px solid #03037f",
+                    }}
+                  >
+                    <img
+                      src={`../uploads/${data?.img}`}
+                      style={{ width: "100%", height: "20vh" }} alt="image"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </section>

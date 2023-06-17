@@ -9,10 +9,11 @@ import Blog from "./pages/TechBlog";
 import Layout from "./components/dashboard/layout";
 import Dashboard from "./components/dashboard/dashboard";
 import Blogs from "./components/dashboard/blogs";
-import Technology from "./components/dashboard/technology";
 import Testmonials from "./components/dashboard/testmoniasl";
 import SignIn from "./pages/signIn";
 import SingleTechBlog from "./pages/singleTechBlog";
+import SlideShow from "./components/dashboard/slideShow";
+import OurPartners from "./components/dashboard/ourPartners";
 
 function App() {
   return (
@@ -33,8 +34,9 @@ function App() {
         <Route path="/dashboard" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="dashblog" element={<Blogs />} />
-          <Route path="technology" element={<Technology />} />
           <Route path="testmonials" element={<Testmonials />} />
+          <Route path="slideshow" element={<SlideShow />} />
+          <Route path="partners" element={<OurPartners />} />
         </Route>
       </Routes>
     </>

@@ -727,7 +727,10 @@
 .partners-card img:hover {
   cursor: pointer;
   transform: scale(1.5);
+  transition: 2s all;
+ 
 
+  
 }
 
 .swiper-container {
